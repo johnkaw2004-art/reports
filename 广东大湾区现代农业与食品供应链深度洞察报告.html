@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广东省（大湾区）现代农业和食品供应链深度洞察报告</title>
+<style>
+/* ================= 基础系统 ================= */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --forest:#17493b;--forest2:#22543d;--leaf:#2f855a;--leaf-l:#edf7f1;
+  --orange:#c05621;--orange-b:#dd6b20;--orange-l:#fdf3ea;
+  --blue:#2b6cb0;--blue-l:#ebf4fb;
+  --red:#9b2c2c;--red-l:#fbf0f0;
+  --gold:#b7791f;--gold-l:#fdf8ec;
+  --bg:#eef2ee;--card:#ffffff;--border:#dfe7e0;
+  --text:#2d3748;--muted:#718096;--deep:#1a202c;
+}
+body{font-family:'PingFang SC','Microsoft YaHei','Hiragino Sans GB','Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:15px;-webkit-font-smoothing:antialiased}
+.container{max-width:1080px;margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{font-family:'Noto Serif SC','Songti SC','SimSun',serif;font-weight:700;color:var(--forest)}
+a{color:var(--leaf);text-decoration:none;border-bottom:1px dashed #a8ccbc}
+a:hover{color:var(--orange)}
+.small{font-size:12.5px;color:var(--muted)}
+strong{color:var(--forest)}
+/* ================= 封面 ================= */
+.cover{background:linear-gradient(140deg,#0e3529 0%,#17493b 50%,#2f855a 115%);color:#fff;padding:78px 40px 0;position:relative;overflow:hidden}
+.cover::after{content:'';position:absolute;right:-120px;top:-120px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(221,107,32,.20),transparent 65%)}
+.cover-inner{max-width:1000px;margin:0 auto;position:relative;z-index:2}
+.cover-badge{display:inline-block;background:rgba(221,107,32,.92);color:#fff;font-size:13px;letter-spacing:6px;padding:6px 18px;border-radius:3px;font-weight:600;margin-bottom:26px}
+.cover h1{color:#fff;font-size:39px;line-height:1.4;letter-spacing:1px;margin-bottom:18px}
+.cover h1 .hl{color:#f6ad55}
+.cover-sub{font-size:16.5px;color:#c8ddcf;max-width:790px;line-height:1.95;font-family:'PingFang SC','Microsoft YaHei',sans-serif}
+.cover-meta{display:flex;flex-wrap:wrap;gap:26px;margin-top:34px;font-size:13px;color:#9fc0ac}
+.cover-meta span{display:inline-flex;align-items:center;gap:7px}
+.cover-meta b{color:#e2f0e6;font-weight:600}
+.cover-field{margin-top:56px;height:30px;position:relative;border-top:3px solid rgba(255,255,255,.5);border-bottom:3px solid rgba(255,255,255,.5);background:repeating-linear-gradient(90deg,rgba(246,173,85,.7) 0 4px,transparent 4px 22px)}
+.cover-stations{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;padding:12px 4px 20px;font-size:12px;color:#8ab09a;letter-spacing:1px}
+/* ================= 目录 ================= */
+.toc{background:var(--card);margin:26px auto;border-radius:12px;padding:34px 38px;box-shadow:0 2px 14px rgba(23,73,59,.08)}
+.toc h2{font-size:21px;padding-bottom:14px;border-bottom:2px solid var(--forest);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 34px}
+.toc-item{display:flex;align-items:baseline;gap:10px;padding:7px 10px;border-radius:6px;font-size:14.5px}
+.toc-item:hover{background:var(--leaf-l)}
+.toc-num{font-family:Georgia,serif;color:var(--orange-b);font-weight:700;font-size:16px;min-width:30px}
+@media(max-width:760px){.toc-grid{grid-template-columns:1fr}}
+/* ================= 通用章节 ================= */
+section.chapter{margin:34px auto}
+.chapter-head{display:flex;align-items:center;gap:16px;margin-bottom:6px}
+.chapter-head .no{background:var(--forest);color:#fff;font-family:Georgia,serif;font-size:26px;font-weight:700;width:58px;height:58px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 10px rgba(23,73,59,.28)}
+.chapter-head h2{font-size:25px}
+.chapter-head .en{font-size:12px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+.chapter-lead{font-size:14.5px;color:var(--muted);margin:8px 0 22px;padding-left:74px}
+@media(max-width:760px){.chapter-lead{padding-left:0}}
+.panel{background:var(--card);border-radius:12px;padding:30px 34px;box-shadow:0 2px 14px rgba(23,73,59,.07);margin-bottom:20px}
+.panel h3{font-size:19px;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.panel h3::before{content:'';width:5px;height:20px;background:var(--orange-b);border-radius:3px;flex-shrink:0}
+.panel h4{font-size:16px;margin:20px 0 10px;color:var(--forest2)}
+p{margin-bottom:12px;text-align:justify}
+ul.plain{margin:0 0 12px 22px}
+ul.plain li{margin-bottom:7px}
+blockquote{background:var(--leaf-l);border-left:5px solid var(--leaf);padding:16px 22px;border-radius:0 8px 8px 0;margin:16px 0;font-size:14.5px;color:#275444}
+blockquote .src{display:block;margin-top:8px;font-size:12.5px;color:var(--muted)}
+.badge{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:20px;font-weight:600;vertical-align:middle;line-height:1.6}
+.bA{background:var(--leaf-l);color:var(--leaf)}
+.bB{background:var(--blue-l);color:var(--blue)}
+.bC{background:var(--gold-l);color:var(--gold)}
+.bWarn{background:var(--orange-l);color:var(--orange)}
+.notice{background:var(--orange-l);border:1.5px solid #f0c9a8;border-radius:10px;padding:16px 20px;margin:16px 0;font-size:14px}
+.notice b{color:var(--orange)}
+.notice.blue{background:var(--blue-l);border-color:#bcd4ec}
+.notice.blue b{color:var(--blue)}
+.notice.green{background:var(--leaf-l);border-color:#bcdccb}
+.notice.green b{color:var(--leaf)}
+/* ================= 数据卡片 ================= */
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:22px 0}
+.kpi{background:var(--card);border-radius:12px;padding:22px 18px 18px;box-shadow:0 2px 12px rgba(23,73,59,.08);position:relative;overflow:hidden;border-top:4px solid var(--leaf)}
+.kpi:nth-child(2){border-top-color:var(--orange-b)}
+.kpi:nth-child(3){border-top-color:var(--forest)}
+.kpi:nth-child(4){border-top-color:#805ad5}
+.kpi:nth-child(5){border-top-color:var(--gold)}
+.kpi:nth-child(6){border-top-color:#319795}
+.kpi:nth-child(7){border-top-color:var(--orange-b)}
+.kpi:nth-child(8){border-top-color:var(--blue)}
+.kpi:nth-child(9){border-top-color:#d53f8c}
+.kpi:nth-child(10){border-top-color:#2c7a7b}
+.kpi:nth-child(11){border-top-color:#6b46c1}
+.kpi:nth-child(12){border-top-color:var(--red)}
+.kpi-grid.c3{grid-template-columns:repeat(3,1fr)}
+.kpi .num{font-family:Georgia,'Noto Serif SC',serif;font-size:29px;font-weight:700;color:var(--forest);line-height:1.25}
+.kpi .num em{font-style:normal;font-size:14px;color:var(--muted);font-weight:400;margin-left:2px}
+.kpi .lbl{font-size:12.5px;color:var(--muted);margin-top:7px;line-height:1.6}
+.kpi .delta{font-size:12px;margin-top:6px;color:var(--leaf);font-weight:600}
+@media(max-width:900px){.kpi-grid{grid-template-columns:repeat(2,1fr)}.kpi-grid.c3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.kpi-grid{grid-template-columns:1fr}.kpi-grid.c3{grid-template-columns:1fr}}
+/* 叙事主线 */
+.storyline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:20px 0;position:relative}
+.story-step{background:var(--card);padding:20px 18px 16px;position:relative;box-shadow:0 2px 10px rgba(23,73,59,.07);border-top:4px solid var(--forest)}
+.story-step:nth-child(2){border-top-color:var(--leaf);margin:0 14px}
+.story-step:nth-child(3){border-top-color:var(--orange-b);margin-right:14px}
+.story-step:nth-child(4){border-top-color:var(--gold)}
+.story-step .tag{font-size:11px;letter-spacing:2px;color:var(--muted)}
+.story-step .t{font-weight:700;font-size:16px;color:var(--forest);margin:5px 0 6px;font-family:'Noto Serif SC','Songti SC',serif}
+.story-step .d{font-size:12.5px;color:var(--muted);line-height:1.7}
+.story-step::after{content:'▶';position:absolute;right:-13px;top:44%;color:var(--orange-b);font-size:13px;z-index:3}
+.story-step:nth-child(4)::after{content:''}
+@media(max-width:820px){.storyline{grid-template-columns:1fr 1fr}.story-step:nth-child(2){margin:0 0 14px 0}.story-step:nth-child(3){margin:0 14px 0 0}.story-step::after{right:-11px}}
+@media(max-width:520px){.storyline{grid-template-columns:1fr}.story-step{margin:0 0 14px!important}.story-step::after{content:''}}
+/* ================= 表格 ================= */
+.tbl-wrap{overflow-x:auto;margin:16px 0;border-radius:10px;box-shadow:0 1px 8px rgba(23,73,59,.06)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;min-width:640px}
+th{background:var(--forest);color:#fff;padding:11px 13px;text-align:left;font-weight:600;font-size:13px;white-space:nowrap}
+td{padding:10px 13px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
+tr:nth-child(even) td{background:#f7faf8}
+tr:hover td{background:var(--leaf-l)}
+td .src{display:block;font-size:11.5px;color:var(--muted);margin-top:3px}
+td b{color:var(--forest)}
+table.evo th:nth-child(1){background:#5a6b7d}
+table.evo th:nth-child(2){background:var(--leaf)}
+table.evo th:nth-child(3){background:var(--orange-b)}
+table.evo td:first-child{color:#4a5568;background:#f4f7f5!important}
+table.evo td{white-space:normal}
+/* ================= 时间轴 ================= */
+.timeline{position:relative;margin:24px 0;padding-left:26px}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:4px;background:linear-gradient(180deg,var(--forest) 0%,var(--leaf) 40%,var(--orange-b) 75%,var(--gold) 100%);border-radius:2px}
+.tl-item{position:relative;margin-bottom:20px}
+.tl-item::before{content:'';position:absolute;left:-26px;top:20px;width:14px;height:14px;border-radius:50%;background:#fff;border:4px solid var(--forest);z-index:2;box-shadow:0 0 0 3px #fff}
+.tl-card{background:var(--card);border-radius:10px;padding:18px 24px;box-shadow:0 2px 10px rgba(23,73,59,.07)}
+.tl-era{display:inline-block;background:var(--forest);color:#fff;font-size:12.5px;padding:3px 13px;border-radius:16px;font-weight:600;letter-spacing:1px;margin-bottom:9px}
+.tl-item:nth-child(2) .tl-era{background:var(--forest2)}
+.tl-item:nth-child(3) .tl-era{background:var(--leaf)}
+.tl-item:nth-child(4) .tl-era{background:var(--orange-b)}
+.tl-item:nth-child(5) .tl-era{background:var(--gold)}
+.tl-item:nth-child(6) .tl-era{background:#2c7a7b}
+.tl-item:nth-child(7) .tl-era{background:#805ad5}
+.tl-card h4{margin:0 0 8px;font-size:16px}
+.tl-card p{font-size:14px;margin-bottom:6px}
+/* ================= 图表容器 ================= */
+.chart-card{background:var(--card);border-radius:12px;padding:26px 26px 18px;box-shadow:0 2px 14px rgba(23,73,59,.07);margin:20px 0}
+.chart-title{font-size:17px;font-weight:700;color:var(--forest);margin-bottom:4px;font-family:'Noto Serif SC','Songti SC',serif;display:flex;align-items:center;gap:9px}
+.chart-title::before{content:'';width:5px;height:19px;background:var(--orange-b);border-radius:3px}
+.chart-sub{font-size:12.5px;color:var(--muted);margin-bottom:18px}
+.legend{display:flex;flex-wrap:wrap;gap:20px;font-size:12.5px;color:var(--text);margin:6px 0 10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:22px;height:4px;border-radius:2px;display:inline-block}
+.svg-wrap{width:100%;overflow-x:auto}
+.svg-wrap svg{min-width:660px;width:100%;height:auto;display:block}
+.chart-note{font-size:12px;color:var(--muted);margin-top:12px;border-top:1px dashed var(--border);padding-top:10px;line-height:1.7}
+/* CSS柱状图 */
+.bars{display:flex;align-items:flex-end;gap:4%;height:250px;padding:10px 6px 0;margin:18px 0 4px}
+.bar-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.bar{width:68%;max-width:74px;background:linear-gradient(180deg,#3c9e77,#22543d);border-radius:5px 5px 0 0;position:relative;transition:.3s;min-height:6px}
+.bar.hl{background:linear-gradient(180deg,#ef8d4d,#c05621)}
+.bar .v{position:absolute;top:-24px;left:50%;transform:translateX(-50%);font-size:13px;font-weight:700;color:var(--forest);white-space:nowrap}
+.bar-lbl{font-size:12px;color:var(--muted);margin-top:9px;white-space:nowrap}
+.bars-axis{border-top:1.5px solid #cbd5e0;margin:0 3px}
+/* CSS横条图 */
+.hbar{margin:13px 0}
+.hbar .row{display:flex;align-items:center;gap:12px;margin-bottom:9px}
+.hbar .name{width:150px;font-size:13px;color:var(--text);text-align:right;flex-shrink:0;line-height:1.4}
+.hbar .track{flex:1;background:#eef4ef;border-radius:6px;height:26px;position:relative;overflow:visible}
+.hbar .fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#3c9e77,#22543d);position:relative;min-width:2px}
+.hbar .fill.o{background:linear-gradient(90deg,#ef8d4d,#c05621)}
+.hbar .fill.b{background:linear-gradient(90deg,#5a9bd4,#2b6cb0)}
+.hbar .fill.g{background:linear-gradient(90deg,#d4af37,#b7791f)}
+.hbar .val{position:absolute;left:calc(100% + 8px);top:50%;transform:translateY(-50%);font-size:12.5px;font-weight:700;color:var(--forest);white-space:nowrap}
+.hbar .val.o{color:var(--orange-b)}
+.hbar .val.b{color:var(--blue)}
+.hbar .val.g{color:var(--gold)}
+@media(max-width:640px){.hbar .name{width:96px;font-size:12px}}
+/* 维度卡 */
+.dim-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0}
+.dim-grid.c4{grid-template-columns:repeat(4,1fr)}
+.dim{background:var(--card);border-radius:10px;padding:16px 13px;box-shadow:0 2px 8px rgba(23,73,59,.06);border-top:3px solid var(--forest2);text-align:center}
+.dim .di{font-size:22px;margin-bottom:6px}
+.dim .dt{font-size:14px;font-weight:700;color:var(--forest)}
+.dim .dd{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.6}
+@media(max-width:860px){.dim-grid{grid-template-columns:repeat(3,1fr)}.dim-grid.c4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.dim-grid{grid-template-columns:repeat(2,1fr)}.dim-grid.c4{grid-template-columns:1fr}}
+/* 政策图谱 */
+.policy-map{background:linear-gradient(180deg,#f5faf6,#fff);border:1px solid var(--border);border-radius:12px;padding:24px 20px 18px;margin:16px 0}
+.pm-node{background:var(--forest);color:#fff;border-radius:9px;padding:11px 16px;text-align:center;max-width:640px;margin:0 auto;box-shadow:0 3px 10px rgba(23,73,59,.25)}
+.pm-node b{font-size:15px;letter-spacing:.5px}
+.pm-node span{display:block;font-size:11.5px;color:#b9d8c6;margin-top:3px;font-weight:400}
+.pm-arr{text-align:center;color:#a0b5aa;font-size:13px;line-height:1;margin:8px 0}
+.pm-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}
+@media(max-width:820px){.pm-tools{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pm-tools{grid-template-columns:1fr}}
+.pm-tool{background:#fff;border:1.5px dashed #bccec3;border-radius:10px;padding:13px 14px}
+.pm-tool .pt{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--leaf);border-radius:14px;padding:3px 11px;margin-bottom:8px}
+.pm-tool:nth-child(2) .pt{background:var(--orange-b)}
+.pm-tool:nth-child(3) .pt{background:var(--gold)}
+.pm-tool:nth-child(4) .pt{background:var(--blue)}
+.pm-tool:nth-child(5) .pt{background:#805ad5}
+.pm-tool:nth-child(6) .pt{background:#2c7a7b}
+.pm-tool b{display:block;font-size:13.5px;color:var(--forest);line-height:1.5;margin-bottom:4px}
+.pm-tool span{display:block;font-size:11.5px;color:var(--muted);line-height:1.65}
+/* 工具卡（六大政策工具） */
+.tool-card{background:var(--card);border-radius:12px;box-shadow:0 2px 14px rgba(23,73,59,.07);margin-bottom:18px;overflow:hidden}
+.tool-head{background:linear-gradient(90deg,var(--forest),var(--forest2));color:#fff;padding:15px 26px;display:flex;align-items:center;gap:14px}
+.tool-head .mn{font-family:Georgia,serif;font-size:23px;font-weight:700;color:#f6ad55}
+.tool-head h4{color:#fff;font-size:16.5px;margin:0}
+.tool-head .mt{font-size:12px;color:#bcd8c8;margin-left:auto;text-align:right}
+.tool-body{padding:21px 26px}
+.tool-body .stat-row{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
+.stat-chip{background:var(--leaf-l);border-radius:8px;padding:10px 15px;flex:1;min-width:150px}
+.stat-chip .sv{font-family:Georgia,serif;font-size:20px;font-weight:700;color:var(--leaf)}
+.stat-chip .sl{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
+.stat-chip.o{background:var(--orange-l)}.stat-chip.o .sv{color:var(--orange-b)}
+.stat-chip.b{background:var(--blue-l)}.stat-chip.b .sv{color:var(--blue)}
+.stat-chip.g{background:var(--gold-l)}.stat-chip.g .sv{color:var(--gold)}
+/* 流通链路图 */
+.flowmap{background:linear-gradient(180deg,#f5faf6,#fff);border:1px solid var(--border);border-radius:12px;padding:26px 20px 20px;margin:16px 0}
+.fm-stage{border-radius:11px;padding:14px 16px;margin-bottom:0;border:1.5px solid}
+.fm-stage .fs-t{font-size:13.5px;font-weight:700;letter-spacing:1px;display:inline-block;border-radius:14px;padding:3px 13px;color:#fff;margin-bottom:10px}
+.fm-stage .fs-items{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+@media(max-width:760px){.fm-stage .fs-items{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fm-stage .fs-items{grid-template-columns:1fr}}
+.fm-item{background:#fff;border-radius:8px;padding:9px 11px;font-size:12.3px;line-height:1.65;border:1px solid #e3ece5;color:var(--text)}
+.fm-item b{color:var(--forest)}
+.fm-arrow{text-align:center;font-size:17px;color:var(--orange-b);line-height:1.2;margin:7px 0;font-weight:700}
+/* 品类冠军卡 */
+.champ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+@media(max-width:820px){.champ-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.champ-grid{grid-template-columns:1fr}}
+.champ{background:var(--card);border-radius:11px;padding:16px 17px;box-shadow:0 2px 10px rgba(23,73,59,.06);border-top:3px solid var(--leaf)}
+.champ:nth-child(2n){border-top-color:var(--orange-b)}
+.champ:nth-child(3n){border-top-color:var(--gold)}
+.champ .ct{font-size:15px;font-weight:700;color:var(--forest);display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.champ .cd{font-size:12.6px;color:var(--text);line-height:1.75}
+.champ .cd b{color:var(--orange-b)}
+.champ .cs{font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.6}
+/* 风险/机遇矩阵 */
+.rk{border-left:4px solid var(--red);background:#fdf7f7}
+.ok{border-left:4px solid var(--leaf);background:#f6fbf8}
+/* 页脚 */
+footer{background:var(--forest);color:#9fc0ac;padding:36px 0 30px;margin-top:44px;font-size:13px}
+footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+footer b{color:#d7e8dc}
+
+a.toc-item{text-decoration:none;color:var(--text);display:block}
+a.toc-item:hover{background:var(--leaf-l);border-color:var(--leaf)}
+/* ===== 补充：徽章 ===== */
+.badge{display:inline-block;border-radius:12px;padding:2px 11px;font-size:12px;font-weight:600;white-space:nowrap}
+.badge.gB{background:#e6f4ea;color:#1e6b3c;border:1px solid #bfe0cb}
+.badge.oB{background:#fdf0e3;color:#a04a15;border:1px solid #f2d5b8}
+.badge.rB{background:#fbeaea;color:#8f2626;border:1px solid #eec7c7}
+.badge.bB{background:#e8f1fa;color:#255a95;border:1px solid #c5ddf2}
+/* ===== 补充：红色通知 ===== */
+.notice.red{background:#fbf0f0;border-left:4px solid var(--red)}
+.notice.red b{color:var(--red)}
+/* ===== 补充：全链路流通图谱 ===== */
+.flow-map{margin:18px 0;padding:18px 16px 8px;background:linear-gradient(180deg,#f6faf7,#fff);border:1px solid var(--border);border-radius:14px}
+.fm-title{font-size:15.5px;font-weight:700;color:var(--forest);text-align:center;margin-bottom:14px;font-family:'Noto Serif SC','Songti SC',serif}
+.fm-stage{border:1.5px solid #cfe2d5;background:#fff;border-radius:11px;padding:13px 15px;margin-bottom:0}
+.fm-h{font-size:13.5px;font-weight:700;color:var(--forest);letter-spacing:.5px;margin-bottom:9px}
+.fm-stage:nth-of-type(2){border-color:#f2d5b8}
+.fm-stage:nth-of-type(3){border-color:#c5ddf2}
+.fm-stage:nth-of-type(4){border-color:#e6d8b8}
+.fm-tags{display:flex;flex-wrap:wrap;gap:7px}
+.fm-tags span{font-size:12px;line-height:1.6;background:#f2f8f4;border:1px solid #d8e8de;border-radius:14px;padding:3px 11px;color:var(--text)}
+.fm-note{font-size:12px;color:var(--orange-b);margin-top:8px;font-weight:600}
+.fm-arr{text-align:center;font-size:16px;color:var(--orange-b);line-height:1.2;margin:7px 0;font-weight:700}
+@media(max-width:640px){.fm-tags span{font-size:11px;padding:2px 8px}}
+/* ===== 补充：页脚 ===== */
+.foot{background:linear-gradient(135deg,#123c30,#17493b 55%,#22543d);color:#e8f2ec;margin-top:40px;padding:44px 22px 34px}
+.foot-inner{max-width:1080px;margin:0 auto;text-align:center}
+.foot-title{font-size:19px;font-weight:700;letter-spacing:2px;font-family:'Noto Serif SC','Songti SC',serif;color:#fff}
+.foot-meta{font-size:12.5px;color:#bcd6c9;margin-top:10px;line-height:2}
+.foot-field{height:3px;max-width:340px;margin:20px auto;border-radius:2px;background:repeating-linear-gradient(90deg,#c9a55a 0 14px,transparent 14px 22px)}
+.foot-note{font-size:13px;color:#dfc98f;letter-spacing:5px;margin-top:2px}
+
+/* 打印 */
+@media print{body{background:#fff}.cover{padding:50px 30px}.panel,.chart-card,.kpi{box-shadow:none}}
+</style>
+</head>
+<body>
+
+<!-- ================= 封面 ================= -->
+<header class="cover">
+  <div class="cover-inner">
+    <div class="cover-badge">深 度 洞 察 报 告</div>
+    <h1>广东省（大湾区）<br>现代农业和<span class="hl">食品供应链</span>深度洞察</h1>
+    <p class="cover-sub">从田间到餐桌、从湾区到全球——一部关于万亿级农业底盘、全国领先的制度供给、960亿预制菜策源地、四项全国第一的流通枢纽与十四亿人口消费腹地的全景研究报告。全链覆盖"产业底盘—政策驱动—中游加工—流通供应链—竞争主体—趋势机遇"六大板块。</p>
+    <div class="cover-meta">
+      <span>编制 ｜ <b>报告汇总员</b></span>
+      <span>素材 ｜ <b>并行搜索员A（两份）· 并行搜索员C（两份）· 共4份分报告交叉验证</b></span>
+      <span>日期 ｜ <b>2026年8月28日</b></span>
+      <span>数据检索截止 ｜ <b>2026-08-28</b></span>
+    </div>
+  </div>
+  <div class="cover-field"></div>
+  <div class="cover-stations">
+    <span>■ 田间</span><span>■ 园区</span><span>■ 工厂</span><span>■ 冷链</span><span>■ 湾区餐桌</span><span>■ 全球市场 ▶</span>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ================= 目录 ================= -->
+<nav class="toc">
+  <h2>目 录</h2>
+  <div class="toc-grid">
+    <a class="toc-item" href="#sum"><span class="toc-num">摘要</span>执行摘要与核心数据</a>
+    <a class="toc-item" href="#ch1"><span class="toc-num">壹</span>产业底盘：逼近万亿的农业基本盘</a>
+    <a class="toc-item" href="#ch2"><span class="toc-num">贰</span>政策驱动："百千万工程"统领的制度供给</a>
+    <a class="toc-item" href="#ch3"><span class="toc-num">叁</span>中游加工：食品工业与预制菜策源地</a>
+    <a class="toc-item" href="#ch4"><span class="toc-num">肆</span>流通供应链：从田间到餐桌的全国第一枢纽</a>
+    <a class="toc-item" href="#ch5"><span class="toc-num">伍</span>竞争主体：双千亿龙头与企业版图</a>
+    <a class="toc-item" href="#ch6"><span class="toc-num">陆</span>消费趋势与前瞻：机遇与风险</a>
+    <a class="toc-item" href="#ch7"><span class="toc-num">柒</span>交叉验证与数据口径裁决说明</a>
+    <a class="toc-item" href="#ch8"><span class="toc-num">附录</span>信源清单与数据缺口声明</a>
+  </div>
+</nav>
+
+<!-- ================= 执行摘要 ================= -->
+<section class="chapter" id="sum">
+  <div class="chapter-head">
+    <div class="no">摘要</div>
+    <div><h2>执行摘要</h2><div class="en">Executive Summary</div></div>
+  </div>
+  <p class="chapter-lead">本报告基于4份分工搜索报告（搜索员A：产业底盘＋重点企业集群、市场消费趋势与投资机遇；搜索员C：政策规划与制度供给、食品加工预制菜与冷链物流流通体系）交叉验证汇总而成，全程区分"广东省全域"与"大湾区（珠三角9市）"双口径，关键数据均标注"数值＋统计年份＋口径＋来源机构"四要素；数据口径冲突处按各报告标注的溯源信息裁决（详见第七章）。</p>
+
+  <div class="storyline">
+    <div class="story-step">
+      <div class="tag">板块一 · 生产端</div>
+      <div class="t">万亿底盘</div>
+      <div class="d">农林牧渔业总产值9798.65亿元（2025年）、距万亿仅一步之遥；一产增加值全国第二；粮食产量连续增长但自给率仅约1/4</div>
+    </div>
+    <div class="story-step">
+      <div class="tag">板块二 · 制度端</div>
+      <div class="t">政策策源</div>
+      <div class="d">"百千万工程"统领六大工具：288个省级产业园"一县一园"全国率先、"12221"体系、全国首个省级预制菜政策、大湾区"菜篮子"</div>
+    </div>
+    <div class="story-step">
+      <div class="tag">板块三 · 加工流通端</div>
+      <div class="t">餐桌经济</div>
+      <div class="d">规上食品工业营收约9000亿级居全国第二；预制菜960亿元占全国13.7%、出口317亿元全国第一；农产品进出口、电商、冷藏车销量、批发市场交易量四项全国第一</div>
+    </div>
+    <div class="story-step">
+      <div class="tag">板块四 · 消费与未来</div>
+      <div class="t">湾区腹地</div>
+      <div class="d">8800万人口、15万亿GDP的湾区消费腹地；RCEP红利兑现、国标洗牌、低空经济与AI农业打开"十五五"新空间，同时直面粮食安全与极端天气考验</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>核心发现</h3>
+    <ul class="plain">
+      <li><strong>一个基本盘：</strong>广东农林牧渔业总产值2025年达9798.65亿元（可比价+4.9%）、2026年上半年4198.81亿元（+4.2%），逼近万亿大关；第一产业增加值5891.80亿元，居全国第二（农业农村部2026年4月口径）。但结构上"小农业、大食品"特征鲜明——农业产值占GDP仅4.0%，而"现代农业与食品"合计构成全省十大万亿级产业集群之一。</li>
+      <li><strong>一种空间分工：</strong>"生产在粤东西北、加工流通消费在珠三角"。粤西贡献全省30.8%的农业产值（湛江水产、茂名荔枝），珠三角以35.3%的产值占比叠加消费、流通与总部功能——大湾区（含港澳）以超8800万人口、超15万亿元GDP构成全国最大食品消费腹地之一，是本报告贯穿始终的双口径主线。</li>
+      <li><strong>一套制度供给：</strong>广东以"百千万工程"为总抓手，构建"一县一园（288个省级产业园）＋12221市场体系＋预制菜十条（全国首创）＋菜篮子工程（2700+基地）＋粤强种芯＋集群培育行动"的政策工具箱，多顶"全国首个/率先"桂冠在手，制度创新是其最深的护城河。</li>
+      <li><strong>一条产业链跃迁：</strong>预制菜产业规模从2022年545亿元跃升至2025年上半年960亿元（占全国13.7%），2024年出口317亿元稳居全国第一；2026年2月国标征求意见稿（禁防腐剂、保质期≤12个月）将引发行业洗牌，广东以25项湾区标准＋15个省级产业园构筑先发合规优势。</li>
+      <li><strong>一个流通枢纽：</strong>广东同时占据农产品进出口总值（3601.3亿元/全国第一）、农产品电商（3120亿元/连续六年第一）、冷藏车销量（11305辆/第一）、江南市场果菜交易量（连续22年第一）四项全国第一，流通端的强势对冲了生产端粮食自给率约1/4的结构性短板。</li>
+      <li><strong>一张企业版图：</strong>双千亿龙头（海大1284.68亿元、温氏1038.24亿元）＋调味品铁三角（海天/李锦记/厨邦）＋饮料新贵（东鹏）构成上市军团；各级农业龙头企业5612家、农村集体总资产1.35万亿元全国第一。深圳大疆＋广州极飞形成全国唯一的农业无人机"双龙头"省份。</li>
+      <li><strong>一组风险清单：</strong>粮食自给率约1/4（全国最低省份之一）、台风单次百亿级损失（2025年"麦德姆"111亿元）、农兽药残留为抽检不合格第一大诱因、2025年江苏社零首超广东结束40余年首位、第一产业固定资产投资下降35.6%——风险与机遇并存，"十五五"政策主轴将是"稳口粮＋大食物观＋科技对冲"。</li>
+    </ul>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi"><div class="num">9798.65<em>亿元</em></div><div class="lbl">2025年广东农林牧渔业总产值（现价），可比价+4.9%，距万亿一步之遥</div><div class="delta">省统计局 · 2026-01-30</div></div>
+    <div class="kpi"><div class="num">全国第2</div><div class="lbl">第一产业增加值5891.80亿元（2025年）全国排位（农业农村部口径）</div><div class="delta">农业农村部规划司 · 2026-04</div></div>
+    <div class="kpi"><div class="num">3601.3<em>亿元</em></div><div class="lbl">2025年广东农产品进出口总值（+3.4%），占全国16.2%，稳居全国首位</div><div class="delta">海关总署广东分署</div></div>
+    <div class="kpi"><div class="num">960<em>亿元</em></div><div class="lbl">2025年上半年广东预制菜产业规模，占全国13.7%；2024年出口317亿元全国第一</div><div class="delta">央广网 · 2026-01-27</div></div>
+    <div class="kpi"><div class="num">5612<em>家</em></div><div class="lbl">各级农业龙头企业（截至2026年4月）；农村集体总资产1.35万亿元全国第一</div><div class="delta">农业农村部规划司</div></div>
+    <div class="kpi"><div class="num">288<em>个</em></div><div class="lbl">省级现代农业产业园（三轮累计，"一县一园"全国率先）＋24个国家级产业园</div><div class="delta">人民日报海外版/农业农村部</div></div>
+    <div class="kpi"><div class="num">2700<em>+</em></div><div class="lbl">大湾区"菜篮子"生产基地，覆盖全国20多省份；2026年建成年交易额超千亿交易中心</div><div class="delta">央视《一线调研》· 2025-01</div></div>
+    <div class="kpi"><div class="num">3120<em>亿元</em></div><div class="lbl">2024年广东农产品电商销售规模，占全国19.5%，连续六年全国第一</div><div class="delta">艾媒咨询</div></div>
+    <div class="kpi"><div class="num">5494.10<em>亿元</em></div><div class="lbl">2025年广东餐饮收入（+2.7%），全国唯一超5000亿省份，"吃的消费"护城河最深</div><div class="delta">省统计公报 · 2026-03</div></div>
+    <div class="kpi"><div class="num">11305<em>辆</em></div><div class="lbl">2025年广东冷藏车销量全国第一（+55.93%），远超全国平均增速（+30.2%）</div><div class="delta">中物联冷链委</div></div>
+    <div class="kpi"><div class="num">约1/4</div><div class="lbl">广东粮食自给率（估算区间24%—26%），产量1318.8万吨 vs 消费约5000万吨级</div><div class="delta">财新/省统计局推算</div></div>
+    <div class="kpi"><div class="num">8800<em>万+</em></div><div class="lbl">大湾区总人口（含港澳），GDP超15万亿元（2025年），全国最大食品消费腹地之一</div><div class="delta">香港特区政府湾区网站</div></div>
+  </div>
+
+  <div class="panel">
+    <h3>报告结构与任务覆盖索引</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:40%">搜索任务（六大板块）</th><th>对应章节</th></tr>
+        <tr><td>任务1 · 现代农业产业规模、结构与区域格局</td><td>第一章（总量/五业结构/区域格局/单品冠军/科技赋能）</td></tr>
+        <tr><td>任务2 · 政策规划与制度供给</td><td>第二章（政策图谱/时间线/七大工具/防混淆清单）</td></tr>
+        <tr><td>任务3 · 食品加工业与预制菜产业</td><td>第三章（食品工业/预制菜/传统品类/标准演进/出海）</td></tr>
+        <tr><td>任务4 · 冷链物流与农产品流通体系</td><td>第四章（冷链基建/枢纽通道/流通体系/供港供澳/数智化）</td></tr>
+        <tr><td>任务5 · 重点企业与产业集群</td><td>第五章（龙头格局/上市公司/分赛道/集群地图/资本动态）</td></tr>
+        <tr><td>任务6 · 市场消费趋势、投资机遇与风险挑战</td><td>第六章（消费底盘/六大赛道/投融资/RCEP/机遇风险清单）</td></tr>
+      </table>
+    </div>
+    <div class="notice blue"><b>双口径约定：</b>本报告严格区分<strong>"广东省全域"（21个地市）</strong>与<strong>"大湾区（珠三角9市，涉港澳时注明含港澳）"</strong>两种地域口径；同时区分"农林牧渔业总产值"（生产口径）与"第一产业增加值"（GDP口径）两种统计口径。生产端数据多为全省口径，流通、消费与总部经济叙事多用湾区口径，引用处均已标注。</div>
+  </div>
+</section>
+<!-- ================= 第一章 产业底盘 ================= -->
+<section class="chapter" id="ch1">
+  <div class="chapter-head">
+    <div class="no">壹</div>
+    <div><h2>产业底盘：逼近万亿的农业基本盘</h2><div class="en">Chapter 1 · Industrial Foundation</div></div>
+  </div>
+  <p class="chapter-lead">覆盖任务1：广东（大湾区）现代农业产业规模、结构与区域格局。口径提示：本章数据除特别注明外均为"广东省全域"口径；"农林牧渔业总产值"（生产口径）与"第一产业增加值"（GDP口径）分列表述。</p>
+
+  <div class="panel">
+    <h3>1.1 总量指标：总产值距万亿一步之遥，增加值全国第二</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>指标</th><th>2024年</th><th>2025年</th><th>2026年上半年</th></tr>
+        <tr><td><b>农林牧渔业总产值（现价）</b></td><td>9701.21亿元</td><td><b>9798.65亿元</b></td><td>4198.81亿元</td></tr>
+        <tr><td>总产值可比价增速</td><td>+3.8%</td><td><b>+4.9%</b>（提高1.1个百分点）</td><td>+4.2%</td></tr>
+        <tr><td>第一产业增加值（GDP口径）</td><td>—</td><td>5891.80亿元（+4.5%）</td><td>—</td></tr>
+        <tr><td>第一产业占GDP比重</td><td>—</td><td>4.0%</td><td>—</td></tr>
+        <tr><td>粮食总产量</td><td>1313.4万吨</td><td>1318.8万吨（+0.4%）</td><td>夏粮72.9万吨（+1.5%，连续7年增产）</td></tr>
+        <tr class="src"><td colspan="4" style="background:#f0f6f1!important"><span class="src" style="margin:0">数据来源：广东省统计局《2024/2025年广东农业生产运行简况》《2026年上半年广东农业生产运行简况》《2025年广东省国民经济和社会发展统计公报》；国家统计局广东调查总队（粮食产量，2025-12-15）。2024年总产值经省局简况＋新浪产业图谱双源互证；2025年总产值经省局简况＋南方日报报道互证。</span></td></tr>
+      </table>
+    </div>
+    <blockquote>广东农林牧渔业总产值2025年达9798.65亿元，距万亿元大关仅差201.35亿元——按可比价+4.9%的增长动能，名义产值破万亿的主要阻力来自农产品生产者价格下行。同期全国农林牧渔业总产值16.6万亿元（国家统计局"十四五"成就报告，2026-06），广东约占5.9%；全国第一产业增加值93347亿元（+3.9%），广东占6.3%、增速高于全国0.6个百分点。<span class="src">第一产业增加值全国排位：本报告采用农业农村部发展规划司2026年4月口径"全国第二"（详见第七章裁决说明#1）；总产值稳居全国前五（山东、河南、四川、湖北之后列第5，智研咨询省际排序）</span></blockquote>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-title">图1-1 广东农林牧渔业总产值：向万亿关口冲刺</div>
+    <div class="chart-sub">单位：亿元｜口径：广东省全域，现价｜数据来源：广东省统计局各期《农业生产运行简况》</div>
+    <div class="bars" style="height:270px">
+      <div class="bar-item"><div class="bar" style="height:88%"><span class="v">9701.21</span></div><div class="bar-lbl">2024年<br><span style="color:var(--leaf)">可比价 +3.8%</span></div></div>
+      <div class="bar-item"><div class="bar hl" style="height:89%"><span class="v" style="color:var(--orange-b)">9798.65</span></div><div class="bar-lbl">2025年<br><span style="color:var(--orange-b)">可比价 +4.9% ★</span></div></div>
+      <div class="bar-item"><div class="bar" style="height:38%"><span class="v">4198.81</span></div><div class="bar-lbl">2026年上半年<br><span style="color:var(--leaf)">可比价 +4.2%</span></div></div>
+      <div class="bar-item"><div class="bar" style="height:91%;background:repeating-linear-gradient(135deg,#d5e5da 0 8px,#eef4ef 8px 16px);border:2px dashed var(--forest)"><span class="v" style="color:var(--muted)">10000（关口）</span></div><div class="bar-lbl" style="color:var(--muted)">万亿关口<br><span>距2025年值差201亿</span></div></div>
+    </div>
+    <div class="bars-axis"></div>
+    <div class="chart-note">注：2026年上半年为1—6月累计值，与全年值不可直接比较（图中并列仅为呈现节奏）。"现代农业与食品"战略性支柱产业集群口径（含食品工业）目标2025年总产值接近2万亿元，其完成值官方未单独披露（数据缺口，见附录）；该口径远大于农林牧渔业总产值口径。</div>
+  </div>
+
+  <div class="panel">
+    <h3>1.2 五业结构："种养渔"三分天下，渔业为最大特色</h3>
+    <div class="chart-card" style="margin-top:6px;box-shadow:none">
+      <div class="chart-title" style="font-size:15.5px">图1-2 2025年上半年农林牧渔业总产值分行业结构</div>
+      <div class="hbar">
+        <div class="row"><div class="name">农业（种植业）</div><div class="track"><div class="fill" style="width:88%"><span class="val">1856.09亿 · 43.8% · +4.3%</span></div></div></div>
+        <div class="row"><div class="name">渔业</div><div class="track"><div class="fill b" style="width:45%"><span class="val b">950.74亿 · 22.4% · +5.3%</span></div></div></div>
+        <div class="row"><div class="name">牧业</div><div class="track"><div class="fill o" style="width:42%"><span class="val o">894.29亿 · 21.1% · +2.3%</span></div></div></div>
+        <div class="row"><div class="name">专业及辅助性活动</div><div class="track"><div class="fill g" style="width:13.5%"><span class="val g">285.80亿 · 6.7% · +12.9%</span></div></div></div>
+        <div class="row"><div class="name">林业</div><div class="track"><div class="fill" style="width:12%"><span class="val">254.64亿 · 6.0% · +6.4%</span></div></div></div>
+      </div>
+      <div class="chart-note">口径：2025年上半年、全省现价产值。来源：广东省统计局《2025年上半年广东农业经济运行情况分析》（2025-08-12）。全年分行业拆分官方未发布（数据缺口），上半年占比可作近似结构参考。</div>
+    </div>
+    <ul class="plain">
+      <li><strong>"种养渔三分天下"：</strong>种植业44%＋渔业22%＋牧业21%合计近九成；农林牧渔服务业增速最快（+12.9%），反映产业链专业分工深化；牧业受猪价、禽价双跌拖累增速最弱（+2.3%）——2025年温氏、牧原等养殖企业利润普遍下滑40%以上为微观印证（详见第五章）。</li>
+      <li><strong>渔业是广东最大特色：</strong>水产品总产量、水产种苗产量、深水网箱养殖水体总量、海水鱼养殖量<strong>四项全国居首</strong>（省统计局，2025-08）；2025年水产品产量997.15万吨（+3.2%），其中海水产品517.45万吨、淡水产品479.70万吨；海水鱼养殖产量占全国近半（省农业农村厅，佛山新闻网2026-08转引）。</li>
+      <li><strong>结构性短板：</strong>粮食播种面积3353.0万亩（-0.1%），"保面积、稳产能"是政策底线任务；粮食自给率约1/4（详见第六章风险清单）。</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3>1.3 主要农产品产量与全国地位</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>品类</th><th>2025年产量</th><th>增速</th><th>全国地位</th></tr>
+        <tr><td>粮食</td><td>1318.76万吨</td><td>+0.4%</td><td>产量稳定的主销区，自给率低（约1/4）</td></tr>
+        <tr><td>蔬菜（含食用菌）</td><td>4377.01万吨</td><td>+3.1%</td><td>全国前列，供港澳主力</td></tr>
+        <tr><td>园林水果</td><td>2181.41万吨</td><td>+6.1%</td><td>全国第一梯队：荔枝、菠萝、龙眼、香蕉多个单品全国第一</td></tr>
+        <tr><td>茶叶</td><td>20.35万吨</td><td>+6.2%</td><td>上升期（英德红茶产业链破百亿）</td></tr>
+        <tr><td>猪牛羊禽肉</td><td>518.69万吨</td><td>+3.6%</td><td>猪肉322.65万吨（+5.7%）、禽肉190.93万吨（+0.8%）；<b>黄羽肉鸡全国第一</b></td></tr>
+        <tr><td>生猪出栏</td><td>4024.96万头</td><td>+5.4%</td><td>年末存栏2400.29万头（+6.8%），产能高位运行</td></tr>
+        <tr><td><b>水产品</b></td><td><b>997.15万吨</b></td><td>+3.2%</td><td><b>全国第一</b>（总产量、种苗、海水鱼养殖、深水网箱水体四项全国居首）</td></tr>
+        <tr><td>农机总动力</td><td>2638.01万千瓦</td><td>+1.0%</td><td>超额完成"十四五"规划2600万千瓦目标</td></tr>
+      </table>
+    </div>
+    <div class="small" style="margin-top:8px">数据来源：广东省统计局《2025年广东省国民经济和社会发展统计公报》（2026-03-31，南方日报数字报全文版逐项核对）；粮食产量为国家统计局广东调查总队口径（2025-12-15）。</div>
+    <blockquote>荔枝"大小年"警示：2025年是荔枝大年，全省产量超160万吨（较正常年份增收三成）；广东荔枝种植面积超400万亩，占全国半壁江山、全球约三分之一，全产业链从业超180万人（佛山新闻网2025-08；广货行天下发布会2026-05，两源一致）。2026年转为小年，全国预计减产37%、广东减产近四成（国家荔枝龙眼产业技术体系监测）——水果产量的年际波动是消费端价格与供给的常态变量，引用水果数据必须标注年份。</blockquote>
+  </div>
+
+  <div class="panel">
+    <h3>1.4 区域格局："农业重心在粤西，总部与消费在珠三角"</h3>
+    <div class="chart-card" style="margin-top:6px;box-shadow:none">
+      <div class="chart-title" style="font-size:15.5px">图1-3 2025年上半年四大板块农林牧渔业总产值</div>
+      <div class="hbar">
+        <div class="row"><div class="name">珠三角（含大湾区9市）</div><div class="track"><div class="fill" style="width:88%"><span class="val">1495.65亿 · 35.3% · +4.8%</span></div></div></div>
+        <div class="row"><div class="name">粤西（湛茂阳）</div><div class="track"><div class="fill o" style="width:77%"><span class="val o">1305.7亿 · 30.8% · +4.6%</span></div></div></div>
+        <div class="row"><div class="name">粤北（五市）</div><div class="track"><div class="fill b" style="width:51%"><span class="val b">860.21亿 · 20.3% · +5.1%</span></div></div></div>
+        <div class="row"><div class="name">粤东（四市）</div><div class="track"><div class="fill g" style="width:34%"><span class="val g">580.01亿 · 13.7% · +4.6%</span></div></div></div>
+      </div>
+      <div class="chart-note">口径：2025年上半年、区域汇总。来源：广东省统计局《2025年上半年广东农业经济运行情况分析》。四大板块功能定位：珠三角＝都市现代农业＋种业与加工流通总部；粤西＝全省农业主产区（水果＋水产双高地）；粤北＝生态农业＋特色畜禽与南药；粤东＝潮汕特色农业＋休闲食品原料基地。</div>
+    </div>
+    <ul class="plain">
+      <li><strong>双千亿农业地市：</strong>茂名、湛江2025年农林牧渔业总产值均超1100亿元，为全省仅有的两个千亿级农业地市（南方都市报2026-02-05）；湛江2024年渔业总产量131.6万吨、渔业产值294.04亿元均居全省首位（新华社《瞭望》2025-04）。</li>
+      <li><strong>增速领跑者：</strong>2025年清远全市总产值623.4亿元、增速6.8%全省第一（央广网2026-07）；珠海增速6.6%（海鲈产业集群带动）；12个地市增速高于全省（4.9%）。</li>
+    </ul>
+    <div class="notice"><b>大湾区口径提示：</b>大湾区（珠三角9市）2025年上半年农业总产值1495.65亿元、占全省35.3%——但湾区更多承担"生产性服务＋食品加工＋流通消费枢纽"功能，农业主产区大量位于粤东西北。引用农业产值数据时严禁将"广东省全域"与"大湾区"混用；湾区叙事应以流通、消费与总部经济视角切入。</div>
+  </div>
+
+  <div class="panel">
+    <h3>1.5 特色支柱产业：单品冠军矩阵</h3>
+    <div class="champ-grid">
+      <div class="champ"><div class="ct">荔枝（全省）</div><div class="cd">种植面积超<b>400万亩</b>，占全国半壁江山、全球约1/3；2025年大年产量超160万吨，全产业链从业超180万人</div><div class="cs">佛山新闻网 2025-08 · 广货发布会 2026-05（双源一致）</div></div>
+      <div class="champ"><div class="ct">菠萝（徐闻）</div><div class="cd">"菠萝的海"年产值从9.8亿元增至<b>54亿元</b>（2025年，含2024年25亿元中间节点），带动近5万农户，收购价3年翻5倍</div><div class="cs">央广网 2024-12 · 南方日报 2026-05-13（时点序列，见第七章裁决#3）</div></div>
+      <div class="champ"><div class="ct">金鲳鱼（湛江）</div><div class="cd">广东2023年养殖产量15.48万吨、超全国一半；湛江"中国金鲳鱼之都"产能占全国<b>1/3以上</b></div><div class="cs">湛江市政府 · 中国日报 2026-06</div></div>
+      <div class="champ"><div class="ct">对虾（湛江）</div><div class="cd">"中国对虾之都"：养殖面积、种苗、产量、加工、出口、饲料等<b>七个全国第一</b>；对虾加工销售额占全国60%（"全国十条虾六条湛江造"）</div><div class="cs">湛江市政府 · 人民网</div></div>
+      <div class="champ"><div class="ct">罗非鱼（茂名）</div><div class="cd">"中国罗非鱼之都"，高端产品（脆肉/吊水）占比从5%升至<b>12%</b>；茂名荔枝种植面积约140万亩为全球最大连片产区</div><div class="cs">珠海网 2025 · 茂名市政府</div></div>
+      <div class="champ"><div class="ct">新会陈皮（江门）</div><div class="cd">全产业链产值<b>261亿元</b>（2021年145亿元），区域农业产业品牌影响力指数全国三连冠，带动就业7.8万人</div><div class="cs">南方日报 · 大湾区门户网 2024</div></div>
+      <div class="champ"><div class="ct">清远鸡（清远）</div><div class="cd">2024年综合产值<b>111.96亿元</b>（+26.3%）、出栏1.53亿只；英德红茶、西牛麻竹笋同破百亿，"五大百亿产业"成型</div><div class="cs">清远市政府 · 央广网 2026-07</div></div>
+      <div class="champ"><div class="ct">海鲈（珠海）</div><div class="cd">珠海海鲈产业集群入选2025年农业农村部优势产业集群；鱼苗孵化成功率提升至<b>90%</b></div><div class="cs">南方都市报 2025</div></div>
+      <div class="champ"><div class="ct">盐焗鸡（饶平钱东）</div><div class="cd">"中国盐焗鸡之乡"，供应全国超<b>80%</b>盐焗鸡休闲食品，12家企业2024年产值31.96亿元</div><div class="cs">南方+ 2024</div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>1.6 科技赋能：无人农场与海洋牧场</h3>
+    <div class="dim-grid c4">
+      <div class="dim"><div class="di">🌾</div><div class="dt">全球首个水稻无人农场</div><div class="dd">2020年罗锡文院士团队（华南农大）在增城创建；至2024年7月全国16省32个，其中广东8个（双源一致）</div></div>
+      <div class="dim"><div class="di">🌊</div><div class="dt">现代化海洋牧场</div><div class="dd">省定目标万亿级集群；金鲳、生蚝、海鲈3个国家级产业集群；2025年海洋生产总值2.04万亿、占全国18.6%、连续31年全国第一</div></div>
+      <div class="dim"><div class="di">🛸</div><div class="dt">无人机植保+智慧农场</div><div class="dd">台山智慧农场覆盖水稻耕种管收全链条；"无人机精准施药"写入省统计局对策建议（2025-08）</div></div>
+      <div class="dim"><div class="di">⛰️</div><div class="dt">丘陵农机化短板</div><div class="dd">农机总动力2638.01万千瓦超"十四五"目标；丘陵山区机械化率显著低于平均，小型农机列入国家补短板目录</div></div>
+    </div>
+    <ul class="plain">
+      <li><strong>湛江海洋渔业样板：</strong>国家首批沿海渔港经济区；全省首只海洋牧场产业基金落地湛江（详见第五章资本动态）。</li>
+      <li><strong>AI×农业已在广东跑通"政策—技术—商业"闭环：</strong>广州黄埔超级农场实证数据（每亩水电成本-47%、农药用量-30%、肥料利用率+40%），详见第六章前瞻研判。</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3>1.7 出口与供港澳：全国第一大农产品进出口省份</h3>
+    <div class="kpi-grid c3" style="margin-top:6px">
+      <div class="kpi"><div class="num">3601.3<em>亿元</em></div><div class="lbl">2025年广东农产品进出口总值（+3.4%），占全国16.2%，稳居全国首位（出口1365.9亿元+1.8%、进口2235.4亿元+4.3%）</div><div class="delta">海关总署广东分署 · 2026-02</div></div>
+      <div class="kpi"><div class="num">657.3<em>万吨</em></div><div class="lbl">2025年1—11月农产品出口量（+13.6%），覆盖全球214个国家和地区</div><div class="delta">广东分署 · 2025-12</div></div>
+      <div class="kpi"><div class="num">全国首位</div><div class="lbl">广东供港澳农产品数量居全国首位；茂名2025年出口鲜荔枝8183吨（+163%）创历史新高</div><div class="delta">国新办发布会 2026-01 · 茂名海关</div></div>
+    </div>
+    <div class="notice blue"><b>交叉验证提示：</b>"3601.3亿元（2025年）"经任务1与任务3-4两份搜索报告双源锁定（省局简况＋南方+2026-02-11报道互证）；任务6报告中误将该值标注为2024年，本报告已按溯源信息更正（详见第七章裁决#5）。2023年对照值为3522.5亿元（占全国15%，海关广东分署2024-06）。</div>
+  </div>
+</section>
+<!-- ================= 第二章 政策驱动 ================= -->
+<section class="chapter" id="ch2">
+  <div class="chapter-head">
+    <div class="no">贰</div>
+    <div><h2>政策驱动："百千万工程"统领的制度供给</h2><div class="en">Chapter 2 · Policy Framework</div></div>
+  </div>
+  <p class="chapter-lead">覆盖任务2：政策规划与制度供给。每条政策均标注"文件全称＋发布机构＋发布时间"；严格区分国家/广东省/地市层级与试点/全面推行状态；已废止或被替代政策予以说明。</p>
+
+  <div class="panel">
+    <h3>2.1 政策体系总览："一条总抓手＋六大政策工具＋两级上位规划"</h3>
+    <div class="policy-map">
+      <div style="font-size:12px;color:var(--muted);letter-spacing:2px;margin-bottom:8px;text-align:center">上 位 规 划 层（国 家）</div>
+      <div class="pm-node" style="max-width:760px"><b>《粤港澳大湾区发展规划纲要》（2019.2，中共中央、国务院）｜中央一号文件（2026.2.3，"十五五"首个）｜《加快农业农村现代化"十五五"规划》（2026.6，国务院，国发〔2026〕14号）</b></div>
+      <div class="pm-arr">▼</div>
+      <div class="pm-node"><b>总抓手："百千万工程"</b><span>百县千镇万村高质量发展工程｜《中共广东省委关于实施"百县千镇万村高质量发展工程"促进城乡区域协调发展的决定》｜2022.12.8省委十三届二次全会审议通过</span></div>
+      <div class="pm-arr">▼ 六大政策工具</div>
+      <div class="pm-tools">
+        <div class="pm-tool"><span class="pt">工具1</span><b>现代农业产业园体系</b><span>省级三轮288个＋国家级24个；"一县一园"全国率先</span></div>
+        <div class="pm-tool"><span class="pt">工具2</span><b>"12221"农产品市场体系</b><span>营销端制度创新，连续三年写入省政府工作报告</span></div>
+        <div class="pm-tool"><span class="pt">工具3</span><b>预制菜"十条"</b><span>2022.3.25印发，全国首个省级预制菜产业政策</span></div>
+        <div class="pm-tool"><span class="pt">工具4</span><b>大湾区"菜篮子"工程</b><span>2019年启动，广州枢纽，跨区域供给协作平台</span></div>
+        <div class="pm-tool"><span class="pt">工具5</span><b>"粤强种芯"＋"粤字号"品牌</b><span>种业与品牌双驱动；白羽肉鸡种源自主突破</span></div>
+        <div class="pm-tool"><span class="pt">工具6</span><b>现代农业产业集群培育行动方案</b><span>2025.4印发：10个千亿级＋20个百亿级集群</span></div>
+      </div>
+      <div class="pm-arr">▼</div>
+      <div style="text-align:center"><span class="badge bB" style="font-size:12.5px">地市配套层：南沙预制菜措施（2024.12修订）· 江门对接菜篮子方案 · 各市"十五五"专项规划编制中</span></div>
+    </div>
+    <p><strong>政策逻辑主线：</strong>以"百千万工程"统筹县镇村发展 → 以产业园/产业集群组织产业化载体 → 以"12221"打通流通与市场 → 以预制菜政策延伸加工增值链条 → 以菜篮子工程保障湾区供给（含港澳）→ 以种业和品牌夯实长期竞争力。多顶"全国首个/率先"桂冠使制度创新成为广东农业最深的护城河。</p>
+  </div>
+
+  <div class="panel">
+    <h3>2.2 政策时间线（2018—2026）</h3>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2018—2019 · 发端</span><h4>"12221"与"菜篮子"相继启动</h4><p>2018年徐闻菠萝滞销（滞销面积10多万亩、最低0.2元/斤无人收购）倒逼"12221"体系发端；2019年2月省农业农村厅发文支持徐闻探索。同年2月18日《粤港澳大湾区发展规划纲要》印发，4—9月广州出台《粤港澳大湾区"菜篮子"建设实施方案》（2019.9.26穗府办正式印发）。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2020—2021 · 载体建设</span><h4>产业集群行动计划与"十四五"三大工程</h4><p>2020年10月前后《广东省发展现代农业与食品战略性支柱产业集群行动计划（2021—2025年）》印发（20个战略性产业集群之一，2025年到期）；2021年9月《广东省推进农业农村现代化"十四五"规划》部署"粤强种芯、粤强农装、粤强智农"三大工程。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2022 · 制度创新年</span><h4>预制菜"十条"＋"百千万工程"两大标杆</h4><p>2022年3月25日《加快推进广东预制菜产业高质量发展十条措施》印发——<b>全国首个省级预制菜产业政策</b>；2022年12月8日省委十三届二次全会通过"百千万工程"决定，确立"一年开局起步（2023）—三年初见成效（2025）—五年显著变化（2027）—十年根本改变（2032）"目标框架。同年预制菜首次写入中央一号文件（国家层面）。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2024—2025 · 深化升级</span><h4>国家监管定调＋省级集群培育</h4><p>2024年3月21日市场监管总局等六部门《关于加强预制菜食品安全监管 促进产业高质量发展的通知》首次国家层面明确预制菜范围与"不添加防腐剂"；2025年4月《关于现代农业产业集群培育行动方案（2025—2027年）》启动"补改投"试点（财政资金由"补助"改"投资"），提出培育10个千亿级＋20个百亿级产业集群；同月广东印发"百千万工程"三年行动方案（2025—2027）。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2026 · "十五五"开局</span><h4>一号文件＋国标征求意见＋规划衔接</h4><p>2026年2月3日"十五五"首个中央一号文件发布（十八大以来第14个）；2月6日预制菜国标等三份文件征求意见（食品安全国家标准＋术语分类＋餐饮自主明示）；2月9日省委农村工作会议部署农业强省建设；4月8日农业农村部发展规划司刊文确认"百千万工程"三年初见成效目标达成；6月《加快农业农村现代化"十五五"规划》印发（国发〔2026〕14号，安排七方面任务）。</p></div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>2.3 七大政策工具分述</h3>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">01</span><h4>"百千万工程"：头号工程与总抓手</h4><div class="mt">省级｜2022.12.8省委决定<br>实施主体：全省122个县＋1609个乡镇＋2万余个行政村</div></div>
+      <div class="tool-body">
+        <p><strong>组织机制：</strong>省委书记任总指挥、省长任第一副总指挥；省市县三级指挥部实体化运作；省领导定点联系市县。截至2026年4月（农业农村部发展规划司口径），阶段性成效如下：</p>
+        <div class="tbl-wrap">
+          <table>
+            <tr><th style="width:38%">指标</th><th>数值（截至2026.4）</th></tr>
+            <tr><td>第一产业增加值位次</td><td><b>全国第二</b>（2025年度）</td></tr>
+            <tr><td>农村居民收入</td><td>人均可支配收入增速连续11年高于城镇居民</td></tr>
+            <tr><td>县域经济</td><td>57个县（市、区）GDP增速连续两年快于全省；"创先15＋进位27＋消薄15"分类施策</td></tr>
+            <tr><td>典型镇村</td><td>累计培育818个典型镇、5806个典型村、25个典型村片区</td></tr>
+            <tr><td>乡村产业平台</td><td>12个国家优势特色产业集群、24个国家现代农业产业园、92个农业产业强镇</td></tr>
+            <tr><td>新型经营主体</td><td>各级农业龙头企业<b>5612家</b>、农民合作社5.7万家、家庭农场15.7万家</td></tr>
+            <tr><td>县域投融资</td><td>100亿元县域经济高质量发展投资基金；专项债"自审自发"试点（全国率先）；全域土地综合整治97县189个项目、拉动投资6613.75亿元</td></tr>
+            <tr><td>农村集体资产</td><td>全省农村集体总资产<b>1.35万亿元，全国第一</b></td></tr>
+            <tr><td>结对帮扶</td><td>珠三角6市选派300余名干部、两年拨付帮扶资金超110亿元；"千企帮千镇、万企兴万村"实施帮扶项目24504个、投入近100亿元；建筑业央企助力874个乡镇、投资1429亿元</td></tr>
+            <tr><td>"双百行动"</td><td>123家高校院所与86个县（市、区）结对；2.2万余支青年大学生突击队</td></tr>
+          </table>
+        </div>
+        <p class="small">2026年进入"五年显著变化"阶段，与"十五五"规划期（2026—2030）高度重叠，为承接"农业强省"部署的关键期。</p>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">02</span><h4>现代农业产业园体系："一县一园"全国率先</h4><div class="mt">省级三轮＋国家级申报<br>2018年起实施</div></div>
+      <div class="tool-body">
+        <div class="tbl-wrap">
+          <table>
+            <tr><th>轮次</th><th>时间</th><th>数量</th><th>财政投入</th></tr>
+            <tr><td>第一轮</td><td>2018—2020</td><td>131个省级（省财政支持）＋珠三角自筹30个＝161个</td><td>省财政75亿元</td></tr>
+            <tr><td>第二轮</td><td>2021—2023</td><td>127个</td><td>—</td></tr>
+            <tr><td><b>累计</b></td><td><b>截至2022.6</b></td><td><b>288个省级现代农业产业园，主要农业县全覆盖</b></td><td>—</td></tr>
+            <tr><td>国家级（广东）</td><td>截至2026.4</td><td>24个国家现代农业产业园</td><td>中央财政奖补</td></tr>
+          </table>
+        </div>
+        <p><strong>机制要点：</strong>①产业园是县级政府组织农业产业化的核心抓手，数量全国领先；②2025年4月集群培育行动方案启动"补改投"试点，产业园体系由"扩数量"转向"提质量"；③与"百千万工程"县镇村体系贯通——57个县布局64个省级产业园区，清远实现"五大百亿农业产业省级产业园全覆盖"（农业农村部2026-04-16清远案例）。</p>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">03</span><h4>"12221"农产品市场体系：把市场挺在生产前面</h4><div class="mt">营销端制度创新<br>2019年徐闻发端</div></div>
+      <div class="tool-body">
+        <div class="dim-grid c4" style="grid-template-columns:repeat(5,1fr)">
+          <div class="dim"><div class="dt" style="color:var(--orange-b)">1</div><div class="dd"><b>个农产品大数据</b>：以销定产，破解产销信息不对称</div></div>
+          <div class="dim"><div class="dt" style="color:var(--orange-b)">2</div><div class="dd"><b>支队伍</b>：销区采购商队伍＋产地经销商队伍</div></div>
+          <div class="dim"><div class="dt" style="color:var(--orange-b)">2</div><div class="dd"><b>大市场</b>：拓展销区市场塑品牌＋产区市场提品质</div></div>
+          <div class="dim"><div class="dt" style="color:var(--orange-b)">2</div><div class="dd"><b>场活动</b>：采购商走进产区＋供应商走进销区</div></div>
+          <div class="dim"><div class="dt" style="color:var(--orange-b)">1</div><div class="dd"><b>揽子目标</b>：品牌打造、销量提升、农民致富</div></div>
+        </div>
+        <p><strong>复制推广路径：</strong>徐闻菠萝（2019）→ 荔枝（2021年"520我爱荔"，广东荔枝年产值144.8亿元）→ "南品北上、北品南下"省际协作 → 预制菜出海（"广东喊全球吃预制菜"＋预制菜出海联盟）→ "年鱼经济"（珠海中国年鱼博览会现场签约百亿元）。</p>
+        <div class="stat-row">
+          <div class="stat-chip o"><div class="sv">9.8亿 → 54亿元</div><div class="sl">徐闻菠萝年产值（约2018年 → 2025年，南方日报2026-05-13）；2024年中间节点25亿元（央广网）——收购价3年翻5倍</div></div>
+          <div class="stat-chip"><div class="sv">连续三年</div><div class="sl">"12221"写入省政府工作报告；2022年写入省党代会报告，被农业农村部作为典型经验向全国推介</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">04</span><h4>预制菜"十条"：全国首创的产业促进政策</h4><div class="mt">省级｜2022.3.25省政府办公厅<br>全国首个省级预制菜产业政策</div></div>
+      <div class="tool-body">
+        <p><strong>十条措施要点：</strong>①建设联合研发平台；②构建质量安全监管规范体系（含"推动粤港澳三地制定预制菜系列湾区标准"）；③壮大产业集群（布局肇庆高要、湛江、茂名、广州南沙、佛山南海顺德、潮州、江门、客家集聚区八大高地）；④培育"十强百优"示范企业；⑤产业人才纳入"粤菜师傅"工程；⑥仓储冷链物流建设（依托国家骨干冷链基地＋惠州绿色农产品基地＋肇庆怀集集散基地）；⑦品牌营销依托"12221"；⑧走向国际市场（"农产品进、预制菜品出"）；⑨财政金融保险支持；⑩组织保障与督查考核。</p>
+        <p><strong>政策演进链：</strong>广东"预制菜十条"（2022.3，省级首创）→ 预制菜写入中央一号文件（2023，国家）→ 六部门监管通知（2024.3，明确范围界定＋不添加防腐剂＋中央厨房产品不属预制菜）→ 国标三文件征求意见（2026.2.6，保质期≤12个月＋餐饮自主明示，<b>尚未正式发布</b>）。后续动态：预制菜连续三年写入省政府工作报告；2026年省两会代表建议建设"中国预制菜第一省"（省人大代表梁思桥）；南沙配套措施2024年12月修订（15条）。</p>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">05</span><h4>大湾区"菜篮子"工程：跨区域供给协作平台</h4><div class="mt">广州主导｜2019年启动<br>穗府办2019.9.26印发</div></div>
+      <div class="tool-body">
+        <div class="stat-row">
+          <div class="stat-chip b"><div class="sv">2700+个</div><div class="sl">生产基地覆盖全国20多个省（区、市），新一批认定371个、青海实现零的突破（2025.1）</div></div>
+          <div class="stat-chip b"><div class="sv">2500个左右</div><div class="sl">2026年目标：基地动态保有量；日均溯源赋码流通量约1300吨</div></div>
+          <div class="stat-chip o"><div class="sv">2026年建成</div><div class="sl">大湾区"菜篮子"交易中心（距白云机场不足10公里、全温控25℃三层设计、预计年交易额超1000亿元）</div></div>
+        </div>
+        <p><strong>机制要点：</strong>①"一个标准供湾区"——统一质量标准与溯源编码（菠菜检测项目达200多项），"同一个湾区，同一个标准"；②生产基地动态管理、有进有出；③跨省辐射（湖南永州等外省地市出台对接方案）。</p>
+        <div class="notice"><b>防混淆：</b>本工程与国家"菜篮子"市长负责制（1988年农业部发起、2017年国办考核办法强化，36个大中城市市长考核机制）为两个体系，不可混同。上位依据为《粤港澳大湾区发展规划纲要》关于保障供港澳食品安全、建设绿色农产品生产供应基地的部署。</div>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">06</span><h4>"粤强种芯"工程与"粤字号"品牌：种业与品牌双驱动</h4><div class="mt">省级｜2021.9"十四五"规划部署</div></div>
+      <div class="tool-body">
+        <p><strong>种业政策链：</strong>国家种业振兴行动方案（2021.7中央深改委，"十年实现重大突破"）→ 省"十四五"规划部署"粤强种芯、粤强农装、粤强智农"三大工程 → 种业振兴"五大行动"＋11项国家种业提升工程项目（第二十四届广东种业博览会2025-12-15）→ "十五五"对标"十年重大突破"目标继续推进（省农业农村厅厅长刘棕会2026-01-26表态）。标志性成果：白羽肉鸡等种源自主突破，"让肉鸡种源不再'卡脖子'"（南方+2026-01-30）。</p>
+        <div class="tbl-wrap">
+          <table>
+            <tr><th>年度目录</th><th>数量结构</th><th>发布时间</th></tr>
+            <tr><td>2020年</td><td>2117个产品入选（广州占300个、全省第一）</td><td>2021年初</td></tr>
+            <tr><td>2023年度</td><td>123个区域公用品牌＋242个品牌示范基地＋2080个产品品牌</td><td>2024.2.26</td></tr>
+            <tr><td>2024年</td><td>290个<b>创新培优实践点</b>（口径调整）</td><td>2025.2</td></tr>
+          </table>
+        </div>
+        <div class="notice"><b>口径警示：</b>2024年起"粤字号"目录统计口径由"区域公用品牌＋品牌示范基地＋产品品牌"调整为"创新培优实践点"，年度数据不可直接纵向比较增减幅。</div>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">07</span><h4>集群培育行动方案与"十五五"衔接</h4><div class="mt">省级｜2025.4印发<br>现行有效文件</div></div>
+      <div class="tool-body">
+        <p><strong>《关于现代农业产业集群培育行动方案（2025—2027年）》</strong>（省委农办、省农业农村厅）：2025年重点培育粮食等<b>10个千亿元级产业集群</b>＋茶叶等<b>20个百亿元级产业集群</b>；启动财政资金"补改投"试点。注意与已到期的《广东省发展现代农业与食品战略性支柱产业集群行动计划（2021—2025年）》（2020年，工信口，"2万亿目标"出处）为两份不同文件。</p>
+        <p><strong>"十五五"动向：</strong>①国家《加快农业农村现代化"十五五"规划》（2026.6，国发〔2026〕14号）安排七方面任务，首要为"提升农业综合生产能力和质量效益"；②省"十五五"规划纲要2026年1月提请省人大审查；③2025年12月省人大常委会《关于促进粤港澳大湾区内地九市高质量发展的决定》涉农表述："统筹发展科技农业、绿色农业、质量农业、品牌农业，提升湾区特色农业发展水平"。研判：冷链物流、预制菜标准、种业振兴为"十五五"开局三大政策着力点。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>2.4 政策防混淆清单（引用红线）</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:22%">易混淆概念</th><th>辨析要点</th></tr>
+        <tr><td><b>两个"菜篮子"</b></td><td>国家"菜篮子"市长负责制（1988年起源、2017年考核办法）≠ 粤港澳大湾区"菜篮子"工程（2019年启动、广州枢纽、跨区域协作平台）</td></tr>
+        <tr><td><b>两个"千万工程"</b></td><td>浙江"千万工程"（2003年"千村示范、万村整治"）是经验源头；广东"百千万工程"（2022年）是学习运用其经验的广东版，全称"百县千镇万村高质量发展工程"</td></tr>
+        <tr><td><b>预制菜政策三级</b></td><td>广东"预制菜十条"（省级2022.3，产业促进）→ 六部门通知（国家部委2024.3，范围界定＋安全监管）→ 国标征求意见稿（2026.2，标准层面，<b>尚未正式发布</b>）</td></tr>
+        <tr><td><b>产业园两级</b></td><td>国家现代农业产业园（2017年起，广东24个）≠ 广东省级现代农业产业园（2018年起三轮共288个）</td></tr>
+        <tr><td><b>集群两文件</b></td><td>《战略性支柱产业集群行动计划（2021—2025）》（2020年工信口，已到期）≠《现代农业产业集群培育行动方案（2025—2027）》（2025年农业农村口，现行有效）</td></tr>
+        <tr><td><b>"粤字号"口径</b></td><td>2023年度（三类合计2445个）与2024年度（290个实践点）口径不同，不可比较增减幅</td></tr>
+        <tr><td><b>广州菜篮子时点</b></td><td>存在"2019年4月出台→5月启动大会→9月正式印发"三个时点，正式引用以穗府办2019.9.26印发版为准</td></tr>
+        <tr><td><b>一号文件计数</b></td><td>2026年一号文件是"十八大以来第14个"（网信办2026.2.5海报口径），部分旧资料沿用"13个"计数</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- ================= 第三章 中游加工 ================= -->
+<section class="chapter" id="ch3">
+  <div class="chapter-head">
+    <div class="no">叁</div>
+    <div><h2>中游加工：食品工业与预制菜策源地</h2><div class="en">Chapter 3 · Food Processing &amp; Prepared Dishes</div></div>
+  </div>
+  <p class="chapter-lead">覆盖任务3：食品加工业与预制菜产业。区分"农林牧渔业总产值"（生产口径）与"食品工业营业收入"（工业口径）；食品工业最新官方确认为2022年数据，"万亿目标"完成值未见官方披露，如实注明。</p>
+
+  <div class="panel">
+    <h3>3.1 食品工业规模：全国第二大食品工业省份</h3>
+    <div class="kpi-grid c4" style="margin-top:6px">
+      <div class="kpi"><div class="num">8994.7<em>亿元</em></div><div class="lbl">2022年广东规上食品工业企业营业收入（不含烟草），占全国8.1%、<b>居全国第2位</b>（仅次于山东）</div><div class="delta">广东省税务局 · 2023-12（南方日报互证）</div></div>
+      <div class="kpi"><div class="num">2190.34<em>亿元</em></div><div class="lbl">2022年广东规上食品工业增加值</div><div class="delta">广东省税务局</div></div>
+      <div class="kpi"><div class="num">万亿级</div><div class="lbl">"现代农业与食品"为广东十大万亿级战略性支柱产业集群之一（与新一代电子信息、绿色石化并列）</div><div class="delta">省工信厅 · 南方日报 2026-02-11</div></div>
+      <div class="kpi"><div class="num">≈2万亿<em>目标</em></div><div class="lbl">集群2025年总产值目标（现代农业与食品各约1万亿）；<b>完成值官方未单独披露</b>（数据缺口，见附录）</div><div class="delta">省《集群行动计划（2021—2025）》</div></div>
+    </div>
+    <div class="notice"><b>口径警示：</b>①2023年《食品工业提质升级工作方案》提出"力争2023年底营收超万亿元"，但2023—2025年是否实际破万亿<strong>公开信源未见官方确认数</strong>，引用时沿用2022年8994.7亿元并注明"2023年起冲击万亿目标"；②"集群2万亿"为含食品工业的宽口径，远大于农林牧渔业总产值（9798.65亿元）口径。全国参照系：2024年全国规上食品工业营收9.07万亿元（4.3万家企业，中国轻工业联合会《2025中国食品工业高质量发展报告》）。</div>
+    <p><strong>空间布局三大方阵：</strong>①<strong>珠三角核心区（大湾区口径）</strong>——广州、佛山、东莞3个千亿级食品工业城市；佛山2022年规上食品企业236家、产值1305.6亿元（三水水都饮料食品产业园2024年佛山食品饮料产值1379.42亿元）；东莞形成麻涌、茶山、道滘三大集聚区；②<strong>粤东西北特色区（全省口径）</strong>——潮州休闲食品、湛江水产品加工、茂名粮油与果蔬加工；③<strong>政策抓手</strong>——推动2—4个珠三角省级食品试点县发展为营收超百亿元食品工业强县。</p>
+    <p><strong>传统优势产量：</strong>精制食用植物油、酱油、冷冻饮品、饮料产量居全国首位；<b>月饼生产和出口量连续13年全国首位</b>（约80%全国产量份额，详见3.3）。</p>
+  </div>
+
+  <div class="panel">
+    <h3>3.2 预制菜：从"策源地"到"标准洗牌期"</h3>
+    <div class="chart-card" style="margin-top:6px">
+      <div class="chart-title">图3-1 广东预制菜产业规模跃升轨迹</div>
+      <div class="chart-sub">单位：亿元｜全产业链口径｜来源：广东省农业农村厅（2022年值）、央广网引省人大代表建议材料（2025H1值，2026-01-27报道）</div>
+      <div class="bars" style="height:250px">
+        <div class="bar-item"><div class="bar" style="height:30%"><span class="v">545</span></div><div class="bar-lbl">2022年<br><span style="color:var(--leaf)">+31.3% · 占全国13%</span></div></div>
+        <div class="bar-item"><div class="bar hl" style="height:52%"><span class="v" style="color:var(--orange-b)">960</span></div><div class="bar-lbl">2025年上半年<br><span style="color:var(--orange-b)">占全国13.7% ★</span></div></div>
+        <div class="bar-item"><div class="bar" style="height:100%;background:repeating-linear-gradient(135deg,#f3ddc3 0 8px,#fdf3ea 8px 16px);border:2px dashed var(--orange-b)"><span class="v" style="color:var(--orange-b)">5000（目标）</span></div><div class="bar-lbl">2026年预期<br><span style="color:var(--muted)">全产业链产值目标</span></div></div>
+      </div>
+      <div class="bars-axis"></div>
+      <div class="chart-note">全国对照：中国预制菜市场规模2024年4850亿元（+33.8%）、2026年预测7490亿元（艾媒咨询口径，含B端C端）。交叉验证：广东960亿元（2025H1）÷ 全国13.7%占比 ≈ 全国7000亿元年化，与艾媒预测轨迹方向一致（不同机构统计边界定义不一，引用需注明艾媒口径）。</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-chip"><div class="sv">约8000家</div><div class="sl">广东预制菜相关企业（2025年注册口径，央广网2026-01-27）</div></div>
+      <div class="stat-chip o"><div class="sv">317亿元</div><div class="sl">2024年广东预制菜全口径出口额，<b>全国第一</b>；年度出口目标：力争突破500亿元</div></div>
+      <div class="stat-chip b"><div class="sv">15个</div><div class="sl">省级预制菜产业园（人民日报客户端＋央广网双源印证）；25项预制菜"湾区标准"</div></div>
+    </div>
+    <ul class="plain">
+      <li><strong>策源地地位：</strong>2022年3月全国率先出台省级"预制菜十条"；预制菜连续三年写入省政府工作报告；全国首个省级预制菜产业联合研究院落户广东；东莞为国家级"食博会·预博会"举办地；佛山顺德为中国国际（佛山）预制菜产业大会永久举办地。</li>
+      <li><strong>空间格局：</strong>珠三角——肇庆高要"大湾区首个预制菜产业园"（"预制菜第一园"，总规划7000亩，首开工项目新协航55亿元；罗氏沼虾"从塘头到成品仅需2小时"，塘头活虾预制加工后价值提升超60%，带动2万人就业、人均增收0.8万—1.5万元）、佛山顺德盆菜集群、广州南沙、珠海斗门、东莞平台；粤西——湛江"中国海鲜美食之都"（金鲳鱼、对虾、罗非鱼精深加工核心区）、茂名农产品加工型园区；粤东——汕头牛肉丸集群、潮州特色食品园区。</li>
+      <li><strong>出海动向：</strong>2023年一季度出口39亿元（广东分署）呈逐季放大；2024年全年317亿元全国第一，产品远销全球主要市场（除南极洲外；另有"五大洲"表述，两口径并列，见第七章裁决#4）；主攻北美、RCEP成员国、欧盟、清真认证市场四大方向；2025年上半年以东南亚为主。模式：RCEP关税红利（2022年湛江签发广东农业RCEP"第一单"）、广府盆菜"乡愁消费"、"体系出海"（品类IP＋海外共享工厂＋前置仓）、"粤菜师傅＋预制菜"破解"锅气"还原。</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3>3.3 传统优势品类：月饼、腊味、凉茶、调味品</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:16%">品类</th><th>关键数据</th><th style="width:26%">口径与来源</th></tr>
+        <tr><td><b>广式月饼</b></td><td>占全国月饼产量约<b>80%</b>；月饼生产与出口量连续13年全国第一；广式月饼销售额约300亿元（2017年）</td><td>产量份额：羊城晚报2019；连冠纪录：省集群行动计划（2020基数）</td></tr>
+        <tr><td><b>月饼大盘</b></td><td>2025年全国月饼市场282.4亿元（艾媒，同比-5.9%）；另有行业白皮书称325亿元——<b>两口径并列，未裁决</b></td><td>艾媒《2025月饼行业创新趋势消费洞察》／行业白皮书</td></tr>
+        <tr><td><b>广式腊味</b></td><td>全国腊味产销量第一品牌"皇上皇"（始创1940年，越秀集团旗下）；广式腊肠年产值估算100余亿元（估算值谨慎使用）</td><td>皇上皇官网；星岛日报估算（2022）</td></tr>
+        <tr><td><b>凉茶</b></td><td>全国市场规模550亿元（2023年，存量缓慢复苏：2018年曾达470亿后回落）；王老吉销至全球150多个国家和地区；2023年广东高院判加多宝赔偿王老吉3.17亿元</td><td>中研普华（中国食品安全网2025-03引用）；王老吉官网；21财经2025-10</td></tr>
+        <tr><td><b>调味品</b></td><td>"海天＋李锦记＋厨邦"铁三角：<b>酱油产量全国第一</b>；海天2025年营收288.73亿元（+7.32%）、净利70.38亿元（+10.95%）创历史新高；李锦记（1888年创立于珠海南水）新会七堡基地为全球最大生产基地（未上市，财报不公开——数据缺口）</td><td>海天2025年报（证券时报2026-03-27）；新会区政府</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>3.4 标准与监管演进：2026年国标十大要点与"洗牌"研判</h3>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2022.03</span><h4>省级首创</h4><p>广东出台全国首个省级预制菜专项政策"预制菜十条"（产业促进导向）。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2024.03</span><h4>国家定调</h4><p>市场监管总局等六部门《通知》首次国家层面明确预制菜范围与定义：<b>不添加防腐剂</b>；中央厨房制作的菜肴、主食类、净菜类、即食类食品不属于预制菜。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2024.07</span><h4>国标立项</h4><p>国家卫健委将预制菜食品安全国家标准列入立项计划。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2025</span><h4>湾区标准先行</h4><p>广东累计发布25项预制菜"湾区标准"（区域协同标准，先于国标构筑合规优势）。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">2026.02（征求意见中）</span><h4>国标三文件征求意见</h4><p>①《食品安全国家标准 预制菜》（征求意见稿）；②推荐性国标《预制菜术语和分类》（按原料分8类）；③《推广餐饮环节自主明示的公告》。截至2026年8月<b>仍为征求意见稿状态</b>，正式落地节奏是2026—2027年行业最大变量。</p></div></div>
+    </div>
+    <div class="dim-grid c4">
+      <div class="dim"><div class="di">🚫</div><div class="dt">不添加防腐剂</div><div class="dd">生产加工中强制不得添加防腐剂（"以食用农产品及制品为原料"统一定义）</div></div>
+      <div class="dim"><div class="di">⏱️</div><div class="dt">保质期≤12个月</div><div class="dd">起草组调研200余家企业、超千款市售产品后确定的"红线"（兼顾公众诉求与企业现实）</div></div>
+      <div class="dim"><div class="di">📦</div><div class="dt">5大类/8类</div><div class="dd">食品安全国标分5大类；术语分类国标按原料分8类（两份文件口径，非矛盾）；4类食物排除在外</div></div>
+      <div class="dim"><div class="di">🔍</div><div class="dt">全链条规范</div><div class="dd">冷藏冷冻须符合GB 31605冷链卫生规范；标签须标注"需加热或复热后食用"；餐饮环节自主明示</div></div>
+    </div>
+    <div class="notice"><b>对广东的影响研判：</b>国标落地将加速行业出清——约8000家粤企中依赖长保质期、防腐剂工艺的中小厂商面临改造压力；广东25项湾区标准先行＋顺德盆菜/湛江水产预制菜头部企业＋"共享工厂"模式在合规与规模化上具备先发优势；12个月保质期红线与广东"冷链+快速达港"物流体系正向匹配。"策源地"地位面临山东（诸城、寿光）、重庆（梁平）等"预制菜之都"竞争。</div>
+  </div>
+</section>
+<!-- ================= 第四章 流通供应链 ================= -->
+<section class="chapter" id="ch4">
+  <div class="chapter-head">
+    <div class="no">肆</div>
+    <div><h2>流通供应链：从田间到餐桌的全国第一枢纽</h2><div class="en">Chapter 4 · Cold Chain &amp; Distribution</div></div>
+  </div>
+  <p class="chapter-lead">覆盖任务4：冷链物流与农产品流通体系。广东同时占据农产品进出口总值、农产品电商、冷藏车销量、批发市场交易量四个全国第一——流通端的强势对冲了生产端粮食自给率不足的短板，这是理解广东农业全局的关键。</p>
+
+  <div class="panel">
+    <h3>4.1 冷链基础设施："销区密、产区补"的空间格局</h3>
+    <div class="chart-card" style="margin-top:6px">
+      <div class="chart-title">图4-1 2025年冷藏车销量省份前三（全国总销量81969辆，+30.2%）</div>
+      <div class="hbar">
+        <div class="row"><div class="name">广东</div><div class="track"><div class="fill" style="width:97%"><span class="val">11305辆 · +55.93% ★全国第一</span></div></div></div>
+        <div class="row"><div class="name">河南</div><div class="track"><div class="fill o" style="width:52%"><span class="val o">6096辆</span></div></div></div>
+        <div class="row"><div class="name">湖北</div><div class="track"><div class="fill o" style="width:52%"><span class="val o">6042辆</span></div></div></div>
+      </div>
+      <div class="chart-note">口径：省份车辆注册流入｜来源：中物联冷链委《2025年冷藏车销量分析报告》（中宏网2026-02-09转载）。广东增速（+55.93%）远超全国平均（+30.2%）；燃料电池冷藏车（广东、河南领跑，全国+138.15%）受益示范城市群政策；微卡冷藏车（+75.73%，全国最快细分车型）反映前置仓即时零售的"最后一公里"扩张。</div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>指标</th><th>数值</th><th>统计年份</th><th>来源</th></tr>
+        <tr><td><b>广东冷藏车销量（全国第一）</b></td><td><b>11305辆，+55.93%</b></td><td>2025年</td><td>中物联冷链委</td></tr>
+        <tr><td>广东冷库库容</td><td>约470万吨（冷链相关企业约270家）</td><td>2022年（较旧，注明）</td><td>前瞻产业研究院</td></tr>
+        <tr><td>湛江"超级冷库"</td><td>总投资9.2亿元、库容超15万吨，2025年6月投用；湛江、茂名海鲜与热带水果<b>5小时内上大湾区餐桌</b></td><td>2025年</td><td>人民日报2025-10-14</td></tr>
+        <tr><td>玉湖冷链（广州花都）</td><td>建筑面积38.5万m²、库容12.4万吨、超600家企业入驻；省首个冻品全温区冷链仓储交易园、最高等级"一级（三星）绿色仓库"</td><td>2024年全面投运</td><td>花城+2024-04-08</td></tr>
+        <tr><td>供销社冷链骨干网（荔枝季）</td><td>荔枝主产区开放冷库21个、库容55.52万吨</td><td>2025年荔枝季</td><td>省供销社（南方+）</td></tr>
+        <tr><td>全国对照：冷库总容量</td><td>2.67亿立方米（+5.53%）；公共型食品冷库2.6亿m³（+6.12%）</td><td>2025年</td><td>中物联冷链委</td></tr>
+        <tr><td>全国对照：冷链需求与服务收入</td><td>食品冷链需求1.92亿吨（+4.35%）、服务收入2799.4亿元（+3.84%，2025H1）</td><td>2025年</td><td>中物联冷链委</td></tr>
+      </table>
+    </div>
+    <p><strong>格局解读：</strong>大湾区（珠三角9市）为进口冻品与消费型冷库聚集区（玉湖冷链、南沙冷链、盐田）；粤西（湛江）正补齐"产区库"短板——湛江超级冷库投用标志着产区冷链补短板启动，直接压缩水产流通损耗。全国对照：2025年新能源冷藏车销量36769辆（渗透率44.86%）／另有30760辆纯电口径（+81.58%）——两口径并列（见第七章裁决#10）。</p>
+  </div>
+
+  <div class="panel">
+    <h3>4.2 国家骨干冷链物流基地：广东"3基地"格局</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>基地</th><th>入选时间</th><th>功能定位</th></tr>
+        <tr><td><b>江门基地</b></td><td>2022年10月（2022年度24个名单，当时广东唯一）</td><td>珠西农产品冷链集散；三年行动计划：到2025年基地内冷库库容达80万m³以上</td></tr>
+        <tr><td><b>广州基地</b></td><td>2025年6月（新一批19个之一）</td><td>依托花都空铁双枢纽＋玉湖冷链园区，冻品全温区交易</td></tr>
+        <tr><td><b>深圳盐田基地</b></td><td>2025年6月（同批，深圳唯一）</td><td>港口型冷链，衔接进口冻品与供港通道</td></tr>
+      </table>
+    </div>
+    <p class="small">全国背景：国家发改委自2020年启动布局，2025年6月新增19个后全国累计<b>105个</b>、覆盖31个省区市。广东以3个基地实现"珠三角双核（广州＋深圳）＋珠西（江门）"覆盖。</p>
+  </div>
+
+  <div class="panel">
+    <h3>4.3 枢纽与通道体系：海陆空全通道</h3>
+    <div class="dim-grid c4">
+      <div class="dim"><div class="di">✈️</div><div class="dt">空港双枢纽</div><div class="dd">白云机场：货邮吞吐量超200万吨（全国第2），日均进出口货物超4000吨，2030年三期扩建后380万吨/年；宝安机场：2025年前9个月生鲜3.1万吨（+36%），"当天到港、当天上市"；2026年首票肯尼亚水果入境（非洲生鲜第一站）</div></div>
+      <div class="dim"><div class="di">🚢</div><div class="dt">海港通道</div><div class="dd">南沙港：全国海运进口车厘子最大口岸（2022/23产季13万吨）；每周约15条榴莲专线，林查班至南沙仅4天；华南最大冷链港群之一。盐田港：国家骨干冷链基地＋供港中转枢纽</div></div>
+      <div class="dim"><div class="di">🚛</div><div class="dt">陆路通道</div><div class="dd">文锦渡口岸为供港鲜活产品主要口岸（每日8时前完成通关配送香港门店）；冷藏车城配网络依托珠三角高速圈"12小时达全省、24小时达华南"</div></div>
+      <div class="dim"><div class="di">🚂</div><div class="dt">中欧班列（参考）</div><div class="dd">广东班列以电子电气等高附加值工业品为主，农产品冷链占比低——农产品出海以海运（南沙）＋空运（白云/宝安）为主（任务3-4报告判断口径）</div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>4.4 农产品流通体系：批发双核＋菜篮子＋电商＋即时零售</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:20%">流通主体</th><th>关键数据</th></tr>
+        <tr><td><b>广州江南果菜批发市场</b></td><td>2025年交易量502.85万吨、交易额291.18亿元；果菜单品交易量<b>连续22年全国第一</b>；进口水果占全国交易量过半份额（2024年对照：502.81万吨/289.67亿元，连续21年）</td></tr>
+        <tr><td><b>深圳海吉星农产品物流园</b></td><td>深圳市唯一一级农产品综合批发市场；深圳市民餐桌食品约<b>80%来源于此</b>；蔬菜/水果/冻品/干货分别约占深圳消费量90%/85%/60%/60%以上，并辐射香港</td></tr>
+        <tr><td><b>大湾区"菜篮子"工程</b></td><td>2700+生产基地覆盖全国20多个省份（2025.1，新认定371个、青海零的突破）；2026年目标动态保有2500个左右、日均溯源赋码流通量1300吨；16个月制定蔬菜质量安全新标准（菠菜检测200多项）——"同一个湾区，同一个标准"</td></tr>
+        <tr><td><b>大湾区"菜篮子"交易中心</b></td><td>距白云机场不足10公里，全温控（常年25℃）三层设计＋顶层无人机配送，<b>2026年建成，预计年交易额超1000亿元</b>（大湾区面积最大、投资最大）</td></tr>
+        <tr><td><b>农产品电商</b></td><td>2024年广东农产品电商销售规模<b>3120亿元，占全国19.5%，连续六年全国第一</b>（全国大盘16025亿元）；11个单品全国第一：茂名荔枝、梅州金柚、徐闻菠萝、惠州梅菜、湛江对虾、潮州凤凰单丛茶、清远鸡、德庆贡柑、新会陈皮、高州储良龙眼、阳江豆豉</td></tr>
+        <tr><td><b>即时零售与前置仓</b></td><td>朴朴超市深耕广深佛（2026年5月传阿里、京东、美团竞购）；美团小象超市"超高GTV增长"深入华南；山姆自营前置仓居行业销售第一；"30分钟送达"倒逼城市冷链末梢扩张</td></tr>
+      </table>
+    </div>
+    <p class="small">标杆案例：清远鸡（冰鲜/预制）2024年电商销售突破1000万只、销售额13亿元；茂名"十万电商卖荔枝"单日成交375万元；徐闻"菠萝的海"开创"中国农产品田头第一播"（2020年）。</p>
+  </div>
+
+  <div class="panel">
+    <h3>4.5 供港供澳供应链：从"三趟快车"到"云签发"</h3>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">1962—2010</span><h4>"三趟快车"48年</h4><p>原对外贸易部与原铁道部开创编号751、753、755三趟快车，"定期、定班、定点"每日开行，分别自上海、郑州、武汉始发经深圳运送鲜活产品赴港；香港五丰行为在港接货人。"每天一班、风雨无阻"奠定供港食品安全与稳定的制度基础；2010年随现代物流多元化退役（深圳罗湖建有国内首座供港快车专题博物馆，2024年3月）。</p></div></div>
+      <div class="tl-item"><div class="tl-card"><span class="tl-era">现行体系</span><h4>冷链货车"朝发夕至"</h4><p>文锦渡口岸为主要通道（每日8时前完成通关配送香港门店）；备案制管理（供港澳蔬菜种植基地与加工企业，海关总署公告2026年第87号更新要求）；证书"云签发"；供澳"先出货再报关"、每月集中申报，通关时间从约3小时压缩至<b>1小时</b>；供港蔬菜安全率长期保持"5个9"（99.999%）。</p></div></div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-chip"><div class="sv">约70%</div><div class="sl">广东占内地输港食品供应总量比重（2022年，南方都市报）；另有"内地供港澳食品约70%来自广州海关辖区"（2018年，中国日报）——<b>口径不同（全省vs关区），并列呈现</b>（见第七章裁决#7）</div></div>
+      <div class="stat-chip o"><div class="sv">100% / 80%</div><div class="sl">鲜奶占全国供港澳份额100%、冰鲜禽肉约80%（广州海关辖区口径，2018年）；广州海关监管生猪占内地供港总量约44%（2022年）</div></div>
+      <div class="stat-chip b"><div class="sv">超九成</div><div class="sl">香港每日消耗约2361吨蔬菜，超九成来自内地（香港特区政府统计，2019年）</div></div>
+    </div>
+    <div class="notice"><b>制度价值研判：</b>供港体系的备案制、全流程监管、绿色通道经验正向大湾区"菜篮子"工程（2700+基地、统一标准）复制推广，成为大湾区规则衔接的先行样板——这既是供应链，更是制度供给的"湾区范式"。</div>
+  </div>
+
+  <div class="panel">
+    <h3>4.6 数智化供应链与全链路流通图谱</h3>
+    <ul class="plain">
+      <li><strong>农产品大数据：</strong>徐闻菠萝大数据平台实时监测全国36个批发市场价格，指导农户错峰上市，年增收约1.2亿元（"12221"数字底座）。</li>
+      <li><strong>田头冷链小站＋直播电商：</strong>产地预冷＋"田头第一播"，实现"产地直播—冷链直发—全国48小时达"。</li>
+      <li><strong>全链溯源：</strong>菜篮子统一溯源信息编码覆盖农资购买、质量自检、采收上市、包装标识全环节电子台账；预制菜"一品一码"智慧监管平台升级中（2026年省两会建议）。</li>
+      <li><strong>智慧冷链园区：</strong>玉湖冷链"线下履约＋线上交易"联动、全温区数字化温控；深圳机场冷链温度带（-25℃至+15℃）全程数字监控。</li>
+    </ul>
+    <div class="flow-map">
+      <div class="fm-title">图4-2 广东（大湾区）农产品与食品全链路流通图谱（2025—2026）</div>
+      <div class="fm-stage">
+        <div class="fm-h">① 生产端 · 广东全省</div>
+        <div class="fm-tags"><span>湛江水产（对虾/金鲳鱼/罗非鱼）</span><span>茂名荔枝</span><span>徐闻菠萝（35万亩/约70万吨/54亿元）</span><span>肇庆罗氏沼虾</span><span>清远鸡</span><span>新会陈皮</span><span>梅州柚</span><span>潮州单丛茶</span></div>
+        <div class="fm-note">→ 田头小站预冷 ＋ 产地直播</div>
+      </div>
+      <div class="fm-arr">▼</div>
+      <div class="fm-stage">
+        <div class="fm-h">② 加工端 · 15个省级预制菜产业园＋食品工业集群</div>
+        <div class="fm-tags"><span>肇庆高要"第一园"（7000亩）</span><span>顺德盆菜</span><span>汕头牛肉丸</span><span>湛江水产预制菜</span><span>海天（佛山）</span><span>李锦记（新会）</span><span>厨邦（中山）</span><span>皇上皇腊味</span><span>王老吉凉茶</span><span>广式月饼（占全国80%）</span></div>
+        <div class="fm-note">→ 国标征求意见稿：无防腐剂 ＋ 保质期≤12个月</div>
+      </div>
+      <div class="fm-arr">▼</div>
+      <div class="fm-stage">
+        <div class="fm-h">③ 枢纽端 · 3个国家骨干冷链基地＋双机场＋南沙港</div>
+        <div class="fm-tags"><span>白云机场（货邮200万吨/全国第2）</span><span>宝安机场（生鲜+36%）</span><span>南沙港（车厘子最大海运口岸/15条榴莲专线）</span><span>盐田港冷链基地</span><span>玉湖冷链12.4万吨</span><span>湛江超级冷库15万吨</span><span>冷藏车销量11305辆全国第一</span></div>
+      </div>
+      <div class="fm-arr">▼</div>
+      <div class="fm-stage">
+        <div class="fm-h">④ 分销端 · 全国＋全球</div>
+        <div class="fm-tags"><span>江南市场（502.85万吨/连续22年全国第一）</span><span>海吉星（深圳80%食品来源）</span><span>菜篮子2700+基地</span><span>新交易中心2026年建成（年交易额超1000亿）</span><span>农产品电商3120亿元/连续六年第一</span><span>前置仓30分钟达</span></div>
+      </div>
+      <div class="fm-arr">▼▼</div>
+      <div class="fm-stage">
+        <div class="fm-h">⑤ 消费端 · 大湾区9市＋港澳 ｜ ⑥ 出海端 · 全球主要市场</div>
+        <div class="fm-tags"><span>供港供澳：广东占内地输港食品约70%</span><span>鲜奶100%/冰鲜禽肉80%（广州关区）</span><span>"云签发"＋供澳1小时通关</span>｜<span>预制菜出口317亿元（2024年全国第一）</span><span>农产品进出口3601.3亿元全国第一（2025）</span><span>RCEP体系出海＋海外共享工厂</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= 第五章 竞争主体 ================= -->
+<section class="chapter" id="ch5">
+  <div class="chapter-head">
+    <div class="no">伍</div>
+    <div><h2>竞争主体：双千亿龙头与企业版图</h2><div class="en">Chapter 5 · Key Players &amp; Clusters</div></div>
+  </div>
+  <p class="chapter-lead">覆盖任务5：重点企业与产业集群。上市公司数据为2025年年度报告口径（2026年3—4月披露，经东方财富、新浪财经、证券时报等多渠道交叉核验）；李锦记等非上市主体财务数据不公开，如实标注数据缺口。</p>
+
+  <div class="panel">
+    <h3>5.1 龙头企业总体格局</h3>
+    <div class="kpi-grid c4" style="margin-top:6px">
+      <div class="kpi"><div class="num">5612<em>家</em></div><div class="lbl">各级农业龙头企业（截至2026年4月，农业农村部发展规划司口径），年营收规模近万亿元；2024年新增认定14家国家级、213家省级</div><div class="delta">农业农村部 2026-04 · 省农业农村厅 2025-02</div></div>
+      <div class="kpi"><div class="num">1.35<em>万亿元</em></div><div class="lbl">全省农村集体总资产，<b>全国第一</b></div><div class="delta">农业农村部 2026-04</div></div>
+      <div class="kpi"><div class="num">18<em>家</em></div><div class="lbl">深圳企业入选2024年中国农业企业500强，居全国一线城市首位；深圳"打造千亿级农业龙头企业方阵"</div><div class="delta">深圳市政府 2025-06</div></div>
+      <div class="kpi"><div class="num">2<em>家千亿</em></div><div class="lbl">营收超千亿的农业食品上市公司：海大集团（1284.68亿元）＋温氏股份（1038.24亿元）</div><div class="delta">2025年年报</div></div>
+    </div>
+    <div class="notice"><b>口径裁决：</b>龙头企业总数存在两个时点数据——5507家（省农业农村厅，2025年2月，年营收近万亿元）与5612家（农业农村部发展规划司，2026年4月）。本报告采用更新后的5612家口径，5507家作为早前口径备注（见第七章裁决#2）。另：广东国家级龙头企业累计总数（估算350家上下）无权威现值，不作推断。</div>
+  </div>
+
+  <div class="panel">
+    <h3>5.2 上市公司2025年业绩总表</h3>
+    <div class="chart-card" style="margin-top:6px">
+      <div class="chart-title">图5-1 广东农业食品板块上市公司2025年营收（亿元）</div>
+      <div class="chart-sub">按营收排序｜来源：各公司2025年年度报告（2026年3—4月披露）｜白云山为"大健康＋医药"混合口径</div>
+      <div class="hbar">
+        <div class="row"><div class="name">海大集团</div><div class="track"><div class="fill" style="width:100%"><span class="val">1284.68 · +12.10%</span></div></div></div>
+        <div class="row"><div class="name">温氏股份</div><div class="track"><div class="fill" style="width:81%"><span class="val">1038.24 · -1.67%</span></div></div></div>
+        <div class="row"><div class="name">白云山*</div><div class="track"><div class="fill g" style="width:60%"><span class="val g">776.56 · +3.55%</span></div></div></div>
+        <div class="row"><div class="name">海天味业</div><div class="track"><div class="fill o" style="width:22.5%"><span class="val o">288.73 · +7.32%</span></div></div></div>
+        <div class="row"><div class="name">东鹏饮料</div><div class="track"><div class="fill o" style="width:16.2%"><span class="val o">208.75 · +31.80%</span></div></div></div>
+        <div class="row"><div class="name">百果园</div><div class="track"><div class="fill b" style="width:6.4%"><span class="val b">81.74 · -20.4%</span></div></div></div>
+        <div class="row"><div class="name">粤海饲料</div><div class="track"><div class="fill" style="width:5.1%"><span class="val">64.89 · +9.77%</span></div></div></div>
+        <div class="row"><div class="name">广州酒家</div><div class="track"><div class="fill" style="width:4.2%"><span class="val">53.82 · +5.04%</span></div></div></div>
+        <div class="row"><div class="name">中炬高新</div><div class="track"><div class="fill" style="width:3.3%"><span class="val">42.00 · -23.90%</span></div></div></div>
+        <div class="row"><div class="name">国联水产</div><div class="track"><div class="fill b" style="width:2.5%"><span class="val b">31.90 · 约-6%</span></div></div></div>
+        <div class="row"><div class="name">燕塘乳业</div><div class="track"><div class="fill" style="width:1.2%"><span class="val" style="text-align:left;margin-left:6px">15.86 · -8.47%</span></div></div></div>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>公司</th><th>总部/赛道</th><th>2025营收</th><th>归母净利</th><th>关键运营数据与研判</th></tr>
+        <tr><td><b>海大集团</b></td><td>广州 · 饲料+养殖</td><td>1284.68亿（+12.10%）</td><td>42.8亿（约-5%）</td><td>饲料销量3208万吨（+21%），外销2986万吨<b>全球第一</b>（超越新希望）；"饲料＋养殖＋种苗＋动保"全链条</td></tr>
+        <tr><td><b>温氏股份</b></td><td>云浮 · 猪鸡养殖</td><td>1038.24亿（-1.67%）</td><td>52.66亿（-43.25%）</td><td>肉猪4047.69万头（+34%）、黄羽鸡13.03亿只<b>全国第一</b>；"公司＋农户"模式发源地；净利仍为广东农业企业盈利之最</td></tr>
+        <tr><td><b>白云山</b>*</td><td>广州 · 大健康+医药</td><td>776.56亿（+3.55%）</td><td>29.83亿（+5.21%）</td><td>王老吉大健康2024年营收87.64亿元（-12.7%）；2025H1大健康板块净利13亿元超2024全年（费用优化）</td></tr>
+        <tr><td><b>海天味业</b></td><td>佛山 · 调味品</td><td>288.73亿（+7.32%）</td><td>70.38亿（+10.95%）</td><td>酱油149.34亿＋蚝油48.68亿＋调味酱29.17亿；营收净利双创历史新高，走出2022年舆情风波</td></tr>
+        <tr><td><b>东鹏饮料</b></td><td>深圳 · 功能饮料</td><td>208.75亿（+31.80%）</td><td>44.15亿（+32.72%）</td><td>全国能量饮料销量第一；2025年2月港股上市（A+H）；动销超百亿瓶</td></tr>
+        <tr><td><b>百果园</b></td><td>深圳 · 水果零售</td><td>81.74亿（-20.4%）</td><td>-3.18亿（亏损收窄）</td><td>门店收缩至4468家（两年关店约1600家）；"好果"高端路线受消费降级冲击，转向性价比＋B端批发</td></tr>
+        <tr><td><b>粤海饲料</b></td><td>湛江 · 水产饲料</td><td>64.89亿（+9.77%）</td><td>0.18亿（+120.84%）</td><td>特种水产饲料（金鲳鱼、海鲈核心供应商）；2026H1营收+41.66%延续高增</td></tr>
+        <tr><td><b>广州酒家</b></td><td>广州 · 食品+餐饮</td><td>53.82亿（+5.04%）</td><td>4.88亿（-1.19%）</td><td>食品收入占69.76%；速冻食品为第二增长曲线</td></tr>
+        <tr><td><b>中炬高新</b></td><td>中山 · 调味品</td><td>42.00亿（-23.90%）</td><td>5.37亿（-39.86%）</td><td>2024年高基数（55.19亿/8.93亿）回落＋行业竞争加剧＋内部治理调整</td></tr>
+        <tr><td><b>国联水产</b></td><td>湛江 · 水产预制菜</td><td>31.90亿（约-6%）</td><td>亏损（阶段性）</td><td>国内对虾预制菜龙头连年亏损（2024年-7.42亿）；剥离上游养殖、聚焦预制菜转型——"大而不强"典型样本</td></tr>
+        <tr><td><b>燕塘乳业</b></td><td>广州 · 乳业</td><td>15.86亿（-8.47%）</td><td>0.58亿（大幅下降）</td><td>华南低温奶龙头；2025年新增国家级龙头企业认定</td></tr>
+        <tr class="src"><td colspan="5" style="background:#f0f6f1!important"><span class="src" style="margin:0">*白云山为含医药板块的混合口径，仅"大健康（王老吉等）"部分属食品口径。非上市重要主体：李锦记（新会基地，蚝油全球销量第一品牌方，财报不公开）；钱大妈（广州，GMV口径连续5年全国最大社区生鲜连锁，2023年营收114.6亿元、门店2938家，推进港股IPO）；广东农垦（省属国企，营收约240亿元量级，天然橡胶＋蔗糖＋粮油贸易）。</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>5.3 分赛道竞争格局解读</h3>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">①</span><h4>养殖与饲料：全国绝对龙头</h4><div class="mt">温氏 · 海大 · 广东农垦</div></div>
+      <div class="tool-body"><p>温氏为全国黄羽肉鸡第一（13.03亿只/年）＋生猪第二梯队（4048万头，单年新增出栏超1000万头全国罕见）；海大饲料销量登顶全球第一、营收为广东农业食品行业冠军。风险信号：2025年养殖板块利润大幅收缩（温氏净利-43.25%），价格周期底部＋需求疲软双重压力。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">②</span><h4>调味品："佛山军团"铁三角</h4><div class="mt">海天 · 李锦记 · 厨邦</div></div>
+      <div class="tool-body"><p>海天走出舆情风波重回增长；李锦记（新会）蚝油全球销量第一（非上市，数据缺口）；中炬高新营收-23.9%显示行业内卷加剧（社区团购低价冲击＋零添加范式转移）。广东酱油产量全国第一。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">③</span><h4>饮料：深圳/东莞系高增长</h4><div class="mt">东鹏 · 王老吉 · 健力宝</div></div>
+      <div class="tool-body"><p>东鹏饮料营收+31.8%、净利+32.72%，"能量饮料第一股"A+H双平台，广东省内市占率第一；王老吉凉茶品类整体承压（2024年-12.7%）；健力宝2025年销售额27亿元（佛山三水）。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">④</span><h4>水产加工：湛江板块转型阵痛</h4><div class="mt">国联水产 · 粤海饲料</div></div>
+      <div class="tool-body"><p>国联水产连年亏损、剥离上游聚焦预制菜；粤海饲料特种水产饲料净利修复（+120.84%）——"上游饲料强、下游加工弱"的分化格局明显；湛江水产预制菜＋海洋牧场基金投资（国美水产9500万元）是转型变量。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">⑤</span><h4>新零售与餐饮供应链：格局重构</h4><div class="mt">钱大妈 · 百果园 · 前置仓</div></div>
+      <div class="tool-body"><p>钱大妈GMV连续5年全国最大社区生鲜连锁、推进港股IPO；百果园两年关店约1600家、转向性价比与B端批发——消费分级对"高端农产品零售"逻辑的冲击尚未结束；即时零售巨头（朴朴、小象）加速整合华南市场。</p></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>5.4 产业集群地图</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:20%">集群</th><th style="width:16%">核心区</th><th>规模/地位（年份）</th></tr>
+        <tr><td><b>湛江水产集群</b></td><td>湛江</td><td>对虾七个全国第一；金鲳鱼产能占全国1/3以上；渔业产量产值全省第一；国家首批沿海渔港经济区（2024—2025）</td></tr>
+        <tr><td><b>茂名荔枝/罗非鱼集群</b></td><td>茂名</td><td>荔枝约140万亩全球最大连片产区；罗非鱼"中国之都"；农业总产值连续超1100亿元的全省农业第一市（2025）</td></tr>
+        <tr><td><b>佛山食品饮料集群</b></td><td>佛山三水</td><td>水都饮料食品产业园：2024年产值1379.42亿元（规上增加值277.11亿元），冲刺千亿集群（2024—2025）</td></tr>
+        <tr><td><b>潮州休闲食品集群</b></td><td>潮州饶平钱东镇</td><td>供应全国80%以上盐焗鸡休闲食品；12家企业2024年产值31.96亿元（比2022年+14%）</td></tr>
+        <tr><td><b>新会陈皮集群</b></td><td>江门新会</td><td>全产业链261亿元；区域品牌影响力指数全国农业产业三连冠（2024）</td></tr>
+        <tr><td><b>清远"五大百亿"集群</b></td><td>清远</td><td>清远鸡111.96亿元（+26.3%）、英德红茶、西牛麻竹笋同破百亿；含丝苗米、北江山羊共五大产业（2024—2025）</td></tr>
+        <tr><td><b>现代化海洋牧场集群</b></td><td>湛江/阳江/汕尾等海岸带</td><td>省定目标万亿级产业集群；金鲳、生蚝、海鲈3个国家级产业集群；全省首只海洋牧场产业基金落地湛江（2025）</td></tr>
+        <tr><td><b>都市现代农业集群</b></td><td>珠三角（广深）</td><td>广州2025年总产值598.04亿元；深圳农业企业500强18家（全国一线城市第一）（2025）</td></tr>
+      </table>
+    </div>
+    <div class="notice blue"><b>集群体系全景：</b>上述产业集群＋288个省级现代农业产业园＋24个国家级产业园＋15个省级预制菜产业园＋3个国家骨干冷链物流基地，共同构成"集群—园区—基地"三级产业化载体网络。</div>
+  </div>
+
+  <div class="panel">
+    <h3>5.5 资本动态（2025—2026）</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:18%">类型</th><th>事件</th></tr>
+        <tr><td><b>IPO</b></td><td>东鹏饮料2025年2月登陆港交所（A+H，广东消费板块标志性IPO）；钱大妈推进港股上市（2026年1月递表消息，"社区生鲜第一股"悬念）；粤十控股（预制菜供应链）三年亏20亿元仍再冲IPO，2025年12月E轮融资投后估值约71.5亿元（广东农垦旗下基金参与）。大盘参照：2026年上半年广东新增上市公司36家、IPO融资约1355亿元（+479%），居全国第一</td></tr>
+        <tr><td><b>产业基金</b></td><td>全省首只海洋牧场产业基金落地湛江（省农业基金参与组建）：已完成对国联水产核心加工子公司国美水产9500万元投资，项目年产水产预制菜3—5万吨</td></tr>
+        <tr><td><b>国资动向</b></td><td>广东农垦基金入股粤十控股（供应链协同）；深圳国资培育千亿级农业龙头方阵</td></tr>
+        <tr><td><b>一级市场</b></td><td>农业机器人（禾芯动力90天连获融资、成立3个月估值超5亿元）、细胞培养肉等新赛道融资升温（详见第六章）</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- ================= 第六章 消费趋势与前瞻 ================= -->
+<section class="chapter" id="ch6">
+  <div class="chapter-head">
+    <div class="no">陆</div>
+    <div><h2>消费趋势与前瞻：机遇与风险</h2><div class="en">Chapter 6 · Consumption, Trends &amp; Outlook</div></div>
+  </div>
+  <p class="chapter-lead">覆盖任务6：市场消费趋势、投资机遇与风险挑战。消费数据为"广东省全域"口径；大湾区（珠三角9市）细分食品消费无单独统计，涉湾区叙事以"人口8800万＋GDP15万亿＋港澳消费外溢"组合指标呈现。</p>
+
+  <div class="panel">
+    <h3>6.1 消费底盘：全国第一大"吃的消费"省份与历史性转折</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>指标</th><th>2024年</th><th>2025年</th></tr>
+        <tr><td>社会消费品零售总额</td><td>—</td><td>46296.74亿元（+2.8%）</td></tr>
+        <tr><td>其中：商品零售</td><td>—</td><td>40802.64亿元（+2.8%）</td></tr>
+        <tr><td><b>其中：餐饮收入</b></td><td>超5000亿元（全国唯一）</td><td><b>5494.10亿元（+2.7%，全国第一）</b></td></tr>
+        <tr><td>限额以上粮油食品类零售</td><td>—</td><td>+9.4%（显著跑赢大盘）</td></tr>
+        <tr><td>常住人口</td><td>1.276亿</td><td>超1.28亿（增量全国首位）</td></tr>
+        <tr><td>大湾区人口 / GDP（含港澳）</td><td>8700万+ / 14.8万亿元</td><td>超8800万 / 超15万亿元</td></tr>
+        <tr class="src"><td colspan="3" style="background:#f0f6f1!important"><span class="src" style="margin:0">来源：广东省统计局《2025年广东省国民经济和社会发展统计公报》（2026-03-31）、《2025年广东经济运行数据》（2026-01-31）；香港特区政府粤港澳大湾区网站（bayarea.gov.hk）。餐饮收入全国第一双源锁定：知乎《2025中国餐饮产业发展指数省份排行榜》（2025-11-28）＋统计公报值。</span></td></tr>
+      </table>
+    </div>
+    <div class="notice"><b>结构性特征（叙事要点）：</b>2025年江苏社零总额首次反超广东，终结广东连续40余年的全国首位（《财经》2026-02-13）；但餐饮收入5494.10亿元仍全国第一且为唯一超5000亿省份——"社零第二、餐饮第一"的组合表明<strong>"吃的消费"是广东最深的护城河</strong>：粮油食品类+9.4%显著跑赢社零大盘（+2.8%），食品消费刚性属性在消费放缓周期中凸显。广州2025年住宿餐饮零售额1229.04亿元（+3.5%）。</div>
+    <ul class="plain">
+      <li><strong>消费行为变迁：</strong>即时零售/前置仓在华南加速渗透——山姆自营前置仓2025年双位数增长居行业第一；美团小象超市深入华南开城；朴朴超市（华南大本营）2026年5月传阿里、京东、美团三巨头竞购（估值20亿—50亿美元区间）。</li>
+      <li><strong>2024年食品出口对照：</strong>广东食品出口总额超700亿元（南方网）；与"农产品出口1365.9亿元（2025年，海关分署）"为不同年度不同口径（食品vs农产品），并列供参考。</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h3>6.2 六大趋势赛道：从"概念"到"放量"</h3>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">①</span><h4>健康化与功能化：从概念到刚需</h4><div class="mt">低糖低脂 · 药食同源 · 功能性食品</div></div>
+      <div class="tool-body">
+        <div class="tbl-wrap">
+          <table>
+            <tr><th>细分赛道</th><th>市场规模</th><th>依据</th></tr>
+            <tr><td>药食同源</td><td>2025年突破<b>3700亿元</b>，全产业链估值超2万亿元</td><td>全国口径，2025中国特种食品产业大会（FoodTalks 2025-07转引）</td></tr>
+            <tr><td>保健食品</td><td>2024年2308.2亿元（+6.9%）</td><td>中商产业研究院</td></tr>
+            <tr><td>功能性饮料</td><td>需求转向低糖/无糖、天然植萃、清洁标签</td><td>智研咨询等产业研究（2026-02）</td></tr>
+          </table>
+        </div>
+        <div class="notice"><b>数值撞车提示：</b>另有产业专栏称"2025年功能性食品市场规模突破3700亿元（增速12%—15%）"，与"药食同源3700亿元"高度接近，疑为同源数据在不同口径下的传播——本报告采用"药食同源"口径并注明（见第七章裁决#9）。</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">②</span><h4>银发食品：老龄化驱动的确定性赛道</h4><div class="mt">介护食品 · 低GI · AI个性化营养</div></div>
+      <div class="tool-body"><p>2025年中国老年食品市场规模预计突破<b>4200亿元</b>；介护食品、低GI食品、AI个性化营养品等高附加值品类年复合增长率超25%（AgeClub，2025-08-21）。人口基本盘：全国60岁及以上人口约3.2亿、占比约23%（2025年末）；广东为全国人口第一大省且老龄化加深，深圳已发布《深圳市银发经济发展规划》（2026年7月）政策卡位。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">③</span><h4>宠物食品：3000亿级高增长赛道</h4><div class="mt">城镇犬猫消费</div></div>
+      <div class="tool-body"><p>2024年中国城镇（犬猫）消费市场3002亿元（+7.5%）、2025年达3126亿元（派读宠物白皮书）；高盛：宠物行业为国内消费增速最快赛道之一，过去5年CAGR约16%。格局提示：广东是宠物食品生产与消费大省，但宠物饲料出口第一大省为山东（约占56%）——粤企出海份额有提升空间。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">④</span><h4>替代蛋白与细胞培养肉：广州政策卡位"未来食品"</h4><div class="mt">新食品原料 · 生物制造</div></div>
+      <div class="tool-body"><p>细胞培养肉按新食品原料申报审查；"十四五"全国农业农村科技发展规划首次提出发展细胞培养肉等未来食品。广州白云区2026年2月印发《促进生物制造产业高质量发展若干措施》（大湾区首个区级生物制造专项政策）；2024年全球细胞培养肉公共投资10.84亿美元、较2023年翻番；行业共识"产业化关键窗口期"已至。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">⑤</span><h4>预制菜：国标落地前夜的"洗牌期"</h4><div class="mt">详见第三章</div></div>
+      <div class="tool-body"><p>广东2025年上半年规模960亿元（+28%以上）、占全国13.7%；2026年2月国标征求意见稿（禁防腐剂＋保质期≤12个月）抬高准入门槛——中小产能面临出清，头部企业获集中度红利（广东预制菜相关企业数量居全国前列）。</p></div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">⑥</span><h4>餐饮供应链工业化：餐饮大省的B端纵深</h4><div class="mt">中央厨房 · 复合调味料 · 食材供应链</div></div>
+      <div class="tool-body"><p>5494.10亿元餐饮收入为中央厨房、复合调味料、食材供应链提供全国最大B端腹地；2025年餐饮增速回落（2.7%）＋企业降本压力→供应链外包与工业化替代加速（省统计局数据＋行业逻辑推演）。</p></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>6.3 投融资热点（2024—2026）："硬科技化"特征鲜明</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>投融资事件</th><th>时间</th><th>金额/估值</th></tr>
+        <tr><td>极飞科技（广州）递交港交所招股书，冲击"农业无人机第一股"（历史融资：百度资本、软银、创新工场、越秀产业基金等，2021年12亿元为中国农业科技领域史上最大单笔）</td><td>2025年9月</td><td>上市融资用于农业机器人研发</td></tr>
+        <tr><td>禾芯动力（哈工大机器人团队＋清华高端院＋中国农科院背景）90天连获两轮融资，成立3个月估值超5亿元</td><td>2025年底—2026年初</td><td>估值超5亿元</td></tr>
+        <tr><td>阿里、京东、美团竞购朴朴超市（华南前置仓龙头）</td><td>2026年5月</td><td>估值20亿—50亿美元区间</td></tr>
+        <tr><td>全球细胞培养肉公共投资（较2023年翻番）</td><td>2024年</td><td>10.84亿美元</td></tr>
+        <tr><td>海洋牧场产业基金落地湛江：投资国联水产子公司国美水产（年产水产预制菜3—5万吨）</td><td>2025—2026</td><td>9500万元（首笔）</td></tr>
+      </table>
+    </div>
+    <div class="notice red"><b>对冲警示：</b>2025年广东第一产业固定资产投资比上年<b>下降35.6%</b>（省统计公报）——农业本体投资收缩与农科/食品科技融资火热并存，资本偏好"装备与科技端"而非"种养端"，或影响中期产能与供给韧性。</div>
+  </div>
+
+  <div class="panel">
+    <h3>6.4 出海与开放：RCEP红利进入"企业损益表"</h3>
+    <div class="kpi-grid c3" style="margin-top:6px">
+      <div class="kpi"><div class="num">1.53<em>万亿元</em></div><div class="lbl">2025年广东对东盟进出口（+5.8%），东盟为第一大贸易伙伴；全省货物贸易9.49万亿元（+4.4%）、占全国20.9%、连续40年全国第一</div><div class="delta">海关总署广东分署 · 2026-01</div></div>
+      <div class="kpi"><div class="num">69<em>种</em></div><div class="lbl">RCEP生效头一年，大湾区出口农产品中69种因关税减让得到直接促进</div><div class="delta">广东外语外贸大学陈龙江教授研究</div></div>
+      <div class="kpi"><div class="num">+70%</div><div class="lbl">廉江红橙时隔20多年重启出口，本产季海外订单同比增长70%，3天可达马来西亚货架</div><div class="delta">农民日报 · 2026-04-01</div></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>RCEP微观案例</th><th>数据</th></tr>
+        <tr><td>肇庆RCEP原产地证书</td><td>2025年签发892份、签证金额约2.27亿元（+13.1%/+8.9%）；四年间企业出口享惠货值约8亿元</td></tr>
+        <tr><td>湛江麻章水产预制菜</td><td>"中国水产预制菜之都"核心区，攻克低温锁鲜技术，"一夜埕金鲳鱼"打入东南亚</td></tr>
+        <tr><td>云浮郁南砂糖橘</td><td>25吨首次自主发往新加坡（云浮首家"种植＋加工"双认证企业）</td></tr>
+        <tr><td>机制升级</td><td>《"媒体+"赋能"百千万工程"农产品市场体系建设行动方案（2025—2027）》：TikTok等海外短视频＋深圳"RCEP国家馆·广东遂溪馆"直播间推动"全链出海"</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>6.5 前瞻研判："十五五"主轴与两大技术主线</h3>
+    <blockquote><strong>"十五五"政策主轴研判：</strong>国家《加快农业农村现代化"十五五"规划》（2026年6月，国发〔2026〕14号）七方面任务以"提升农业综合生产能力和质量效益"为首；"多元化食物供给体系"（大食物观）表述＋广东粮食自给率约1/4的现实，预示广东"十五五"政策主轴——<strong>稳口粮基本盘＋做大食物供给增量（海洋牧场、设施农业、生物制造）＋以科技对冲资源约束</strong>。广东省"十五五"规划纲要已印发，省农业农村厅专题调研聚焦岭南特色现代乡村产业体系与农业新质生产力。</blockquote>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">A</span><h4>低空经济×农业：广东"双龙头"格局</h4><div class="mt">2025年中央一号文件首提"低空技术"</div></div>
+      <div class="tool-body">
+        <ul class="plain">
+          <li><strong>大疆农业（深圳）：</strong>全球保有量突破<b>70万台</b>（截至2026年6月）、业务覆盖超100个国家和地区；吊运场景累计转运农业物资1700万吨（秧苗、莲藕、毛竹、芒果、水产物资等）——《农业无人机行业白皮书（2025/2026）》（农民日报社×大疆农业，2026-07-25）。</li>
+          <li><strong>极飞科技（广州）：</strong>港股IPO推进中，冲击"农业无人机第一股"。</li>
+          <li><strong>格局判断：</strong>深圳大疆＋广州极飞＝全国唯一的农业无人机"双总部"省份，占据产业制高点。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-head"><span class="mn">B</span><h4>AI×农业：从"试验田"到"效率账"</h4><div class="mt">广州黄埔超级农场实证</div></div>
+      <div class="tool-body">
+        <div class="tbl-wrap">
+          <table>
+            <tr><th>指标</th><th>数值</th><th>指标</th><th>数值</th></tr>
+            <tr><td>水稻飞播效率</td><td>30分钟近300亩，为人工50倍</td><td>每亩水电成本</td><td><b>下降47%</b></td></tr>
+            <tr><td>300亩插秧人力</td><td>10—15人 → 2—3人</td><td>农药用量</td><td><b>减少30%</b></td></tr>
+            <tr><td>肥料利用率</td><td><b>提升40%</b></td><td>农场人力配置</td><td>常年仅需3名技术人员</td></tr>
+          </table>
+        </div>
+        <p class="small">来源：人民日报2026-04-08《稻田里的AI故事》实地报道（广州黄埔极飞超级农场）；同套模式新疆"超级棉田"2人管理3000亩、亩产+16%、综合成本-22.89%。</p>
+        <p><strong>依据链：</strong>中央一号文件（政策）→ 农业农村部"AI+粮食安全"部署（2025-11）→ 广东双龙头＋超级农场（场景）→ 47%/30%/40%效率数据（实证）——"AI+农业"在广东已跑通"政策—技术—商业"闭环，"十五五"将从水稻向水产、果园、设施农业复制。配套：罗锡文院士团队"水稻无人化智慧农场关键技术"入选2025年中国农业重大科技新成果；广州构建171个标准化数据目录、归集涉农数据超6100万条；"飞快农服"平台实现农户手机下单→飞手上门（头部团队年作业12万亩次）。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>6.6 机遇清单（TOP8，按确定性排序）</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:5%">#</th><th>机遇</th><th style="width:14%">确定性</th></tr>
+        <tr><td>1</td><td><b>预制菜国标洗牌后的头部集中：</b>禁防腐剂＋保质期≤12个月抬高门槛，广东960亿规模（占全国13.7%）＋出口317亿全国第一，头部份额提升</td><td><span class="badge gB">高</span>（标准已征求意见）</td></tr>
+        <tr><td>2</td><td><b>RCEP出海深化：</b>东盟为第一大贸易伙伴（1.53万亿元，+5.8%），廉江红橙订单+70%、肇庆原产地证书+13.1%微观验证</td><td><span class="badge gB">高</span>（红利持续兑现）</td></tr>
+        <tr><td>3</td><td><b>低空经济×农业：</b>中央一号文件首提"低空技术"，大疆70万台＋极飞IPO，广东双龙头占产业制高点</td><td><span class="badge gB">高</span>（政策＋资本双确认）</td></tr>
+        <tr><td>4</td><td><b>健康化/银发食品：</b>老年食品4200亿元市场、介护/低GI品类CAGR超25%；广东1.28亿人口＋老龄化加深</td><td><span class="badge bB">中高</span></td></tr>
+        <tr><td>5</td><td><b>AI+农业（无人农场）：</b>广州超级农场实证（成本-47%/农药-30%），2035建成都市现代农业强市，6100万条数据底座</td><td><span class="badge bB">中高</span></td></tr>
+        <tr><td>6</td><td><b>宠物食品：</b>全国3000亿+（CAGR约16%），广东产销大省，出海份额有提升空间</td><td><span class="badge oB">中</span></td></tr>
+        <tr><td>7</td><td><b>细胞培养肉/生物制造：</b>广州白云区专项政策（2026-02），全球公共投资翻番至10.84亿美元，产业化窗口期开启</td><td><span class="badge oB">中</span>（长周期，监管审批是关键变量）</td></tr>
+        <tr><td>8</td><td><b>生鲜即时零售整合：</b>朴朴并购案（20亿美元级估值）落地后，华南供应链与自有品牌食品存在整合红利</td><td><span class="badge oB">中</span>（事件驱动型）</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>6.7 风险清单（TOP8，按影响量级排序）</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:5%">#</th><th>风险</th><th style="width:14%">量级</th></tr>
+        <tr><td>1</td><td><b>粮食自给率仅约1/4：</b>产量1318.8万吨 vs 消费约5000万吨级，人均占有量约103公斤（全国平均的约1/5），高度依赖外部调入；山地多平原少＋撂荒压力构成耕地约束</td><td><span class="badge rB">系统性/长期</span></td></tr>
+        <tr><td>2</td><td><b>台风等极端天气：</b>2025年"麦德姆"致湛江195.73万人受灾、直接经济损失约111亿元（全口径，含非农产业）；"龙舟水"＋台风叠加致早稻损失超1.5万吨、荔枝裂果；近岸网箱老化放大灾损</td><td><span class="badge rB">百亿级/次</span></td></tr>
+        <tr><td>3</td><td><b>食品安全（农兽残）：</b>2025年抽检不合格中农药残留超标占22.21%、兽药残留19.85%、添加剂超范围超限量约18%，食用农产品为重灾区</td><td><span class="badge rB">品牌与出口资质</span></td></tr>
+        <tr><td>4</td><td><b>消费首位度流失：</b>2025年江苏社零首超广东（结束40余年第一）；餐饮增速回落至2.7%，餐饮价格战与成本压力向上游传导</td><td><span class="badge oB">结构性/中期</span></td></tr>
+        <tr><td>5</td><td><b>农业投资收缩：</b>第一产业固定资产投资-35.6%（2025年），种养端设施投资下滑，或影响中期供给韧性</td><td><span class="badge oB">供给韧性/中期</span></td></tr>
+        <tr><td>6</td><td><b>预制菜行业出清阵痛：</b>国标过渡期内中小企业合规成本上升，产能淘汰带来短期就业与供给波动</td><td><span class="badge oB">行业结构/短期</span></td></tr>
+        <tr><td>7</td><td><b>国际贸易壁垒：</b>全球关税壁垒高筑，预制菜出海成本激增；目标国技术法规差异（RCEP成员国水产品进口程序）双重考验</td><td><span class="badge oB">出海企业/中期</span></td></tr>
+        <tr><td>8</td><td><b>生鲜零售动荡：</b>叮咚买菜撤出广深；朴朴并购整合存渠道变数；前置仓盈利模型仍在验证期（山姆自营第一 vs 第三方玩家分化）</td><td><span class="badge oB">渠道/短期</span></td></tr>
+      </table>
+    </div>
+    <div class="notice red"><b>引用注记：</b>台风"麦德姆"111亿元为湛江全市全口径直接经济损失（含非农产业），农业口径损失需另行拆分；粮食自给率官方近年未直接发布，"约1/4（24%—26%区间）"为基于产量与人均消费约400公斤安全线的推算值（详见第七章裁决#8）。</div>
+  </div>
+</section>
+<!-- ================= 第七章 交叉验证与裁决 ================= -->
+<section class="chapter" id="ch7">
+  <div class="chapter-head">
+    <div class="no">柒</div>
+    <div><h2>交叉验证与数据口径裁决说明</h2><div class="en">Chapter 7 · Cross-Validation &amp; Adjudication</div></div>
+  </div>
+  <p class="chapter-lead">本报告对4份搜索报告的全部关键数据进行交叉验证。数据口径冲突时，按各报告标注的溯源信息（信源权威性＋发布时点＋统计口径）裁决；无法裁决的并列呈现。以下为12项裁决记录。</p>
+
+  <div class="panel">
+    <h3>7.1 口径冲突裁决总表</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:4%">#</th><th style="width:20%">冲突点</th><th style="width:30%">各报告口径</th><th>裁决与依据</th></tr>
+        <tr><td>1</td><td><b>一产增加值全国排位</b></td><td>任务1："常年居全国前三"（农小蜂2024-07＋知乎转引国家统计局，两源一致）<br>任务2："全国第二"（农业农村部发展规划司，2026-04-08）</td><td><span class="badge gB">采信"全国第二"</span>——农业农村部规划司2026年4月口径为当前最权威的阶段性总结（"百千万工程"成效发布），时点最新；"前三"为保守表述，两者不矛盾</td></tr>
+        <tr><td>2</td><td><b>农业龙头企业数量</b></td><td>任务1：5507家、年营收近万亿元（省农业农村厅，2025-02）<br>任务2：5612家（农业农村部规划司，2026-04）</td><td><span class="badge gB">采信5612家</span>（截至2026年4月）——两口径发布时点相差14个月，属时点更新而非数据冲突；5507家作为早前口径备注</td></tr>
+        <tr><td>3</td><td><b>徐闻菠萝年产值</b></td><td>任务1：从9.8亿元增至25亿元（2024年，央广网）<br>任务2：从9.8亿元增至54亿元（2025年，南方日报2026-05-13）</td><td><span class="badge gB">采信时点序列</span>：9.8亿（约2018）→ 25亿（2024）→ 54亿（2025）——两者为不同年份统计值，构成本报告增长轨迹叙事，非冲突</td></tr>
+        <tr><td>4</td><td><b>预制菜出口覆盖范围</b></td><td>任务6："足迹遍及五大洲"（南方网转引海关数据）<br>任务3-4："覆盖全球六大洲（除南极洲外）主要市场"（央广网2026-01-27）</td><td><span class="badge oB">并列注明</span>——两信源均为权威媒体转引，差异或源于"主要市场"与"洲"的计数口径；本报告正文采用"远销全球主要市场"的稳健表述</td></tr>
+        <tr><td>5</td><td><b>农产品进出口3601.3亿元归属年份</b></td><td>任务1＋任务3-4：2025年（省局简况＋南方+2026-02-11双源锁定）<br>任务6：误标为2024年</td><td><span class="badge gB">裁决为2025年</span>——两份报告独立互证一致；2023年对照值3522.5亿元（海关分署2024-06）佐证序列连贯；任务6标注系笔误，已更正</td></tr>
+        <tr><td>6</td><td><b>2025年月饼市场规模</b></td><td>艾媒咨询：282.4亿元（-5.9%）<br>行业白皮书：325亿元</td><td><span class="badge oB">并列呈现</span>——两第三方机构口径（零售额vs产值口径）差异无权威裁决依据，引用时注明出处</td></tr>
+        <tr><td>7</td><td><b>供港食品"约70%"口径</b></td><td>"广东占内地输港食品供应总量约70%"（2022年，南方都市报）<br>"内地供港澳食品约70%来自广州海关辖区"（2018年，中国日报）</td><td><span class="badge oB">并列呈现</span>——全省口径vs关区口径、2022年vs2018年，两者均为真值，本报告全文分别注明口径</td></tr>
+        <tr><td>8</td><td><b>广东粮食自给率</b></td><td>24%（2019年，财新转引官方：产量1240.8万吨/消费约5125万吨）<br>38%（2007年，省统计局历史口径）<br>另有搜狐历史口径引用</td><td><span class="badge gB">表述为"约1/4（近年估算区间24%—26%）"</span>——38%为2007年旧值；按2025年产量1318.8万吨÷人均400公斤安全线推算约25%—26%，与财新口径一致；优先引用产量/消费量原始数值而非比率</td></tr>
+        <tr><td>9</td><td><b>"3700亿元"数值撞车</b></td><td>药食同源2025年突破3700亿元（特种食品产业大会口径，FoodTalks转引）<br>功能性食品2025年突破3700亿元（产业专栏口径）</td><td><span class="badge oB">采信"药食同源"口径</span>——两数值高度接近疑为同源传播，择一引用并注明（本报告6.2节）</td></tr>
+        <tr><td>10</td><td><b>新能源冷藏车销量</b></td><td>36769辆（渗透率44.86%）<br>30760辆纯电（+81.58%）</td><td><span class="badge oB">并列呈现</span>——中物联冷链委两处统计口径微差（含混动vs纯电），本报告注明双口径；该指标为全国层面数据</td></tr>
+        <tr><td>11</td><td><b>预制菜国标分类</b></td><td>"分5大类"（食品安全国家标准征求意见稿）<br>"按原料分8类"（推荐性国标《预制菜术语和分类》征求意见稿）</td><td><span class="badge gB">两份文件并列</span>——2026年2月6日三份文件同日征求意见，5类（安全标准）与8类（术语分类）分属不同文件，非数据冲突</td></tr>
+        <tr><td>12</td><td><b>"2万亿"集群目标完成值</b></td><td>任务1＋任务3-4均确认：官方未单独披露</td><td><span class="badge oB">数据缺口</span>——不作推断；本报告以"农林牧渔业总产值9798.65亿元（2025）＋规上食品工业营收（2022年8994.7亿元）"拼接近似口径呈现并全程注明</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>7.2 双口径执行情况核查</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:30%">口径维度</th><th>执行情况</th></tr>
+        <tr><td><b>地域口径：广东全省 vs 大湾区</b></td><td>生产端数据（产值、产量、出口、政策）均为全省口径并标注；湾区叙事采用"珠三角9市农业产值占35.3%（2025H1）＋8800万人口＋15万亿GDP＋菜篮子＋供港供澳＋流通枢纽"的功能视角；两口径在全报告中未混用</td></tr>
+        <tr><td><b>统计口径：总产值 vs 增加值</b></td><td>"农林牧渔业总产值9798.65亿元"（生产口径，含中间投入）与"第一产业增加值5891.80亿元"（GDP口径，净值）在摘要、第一章分列并注明比值约1.66</td></tr>
+        <tr><td><b>产业口径：农业 vs 食品工业 vs 集群</b></td><td>农业（9798.65亿）／食品工业（8994.7亿，2022）／"现代农业与食品"集群（目标2万亿）三口径在摘要、第一章、第三章分别定义并交叉提示，未作加总混算</td></tr>
+        <tr><td><b>时间口径：荔枝大小年等</b></td><td>水果类数据（2025年大年160万吨+vs2026年小年减产近四成）全程标注年份；总产值分2024/2025/2026H1三个时点呈现</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 附录 ================= -->
+<section class="chapter" id="ch8">
+  <div class="chapter-head">
+    <div class="no">附录</div>
+    <div><h2>信源清单与数据缺口声明</h2><div class="en">Appendix · Sources &amp; Data Gaps</div></div>
+  </div>
+
+  <div class="panel">
+    <h3>A. 核心信源清单（按类别）</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:22%">类别</th><th>核心信源（部分）</th></tr>
+        <tr><td><b>官方统计</b></td><td>广东省统计局（2025年统计公报2026-03-31／2024、2025年及2026年上半年农业生产运行简况／2025年上半年农业经济运行分析2025-08-12）；国家统计局及广东调查总队（粮食产量2025-12-15、"十四五"成就系列2026-06）；国家统计局《2025年国民经济和社会发展统计公报》</td></tr>
+        <tr><td><b>政策文件</b></td><td>《中共广东省委关于实施"百县千镇万村高质量发展工程"促进城乡区域协调发展的决定》（2022-12-08）；《加快推进广东预制菜产业高质量发展十条措施》（2022-03-25）；《粤港澳大湾区"菜篮子"建设实施方案》（穗府办2019-09-26）；《关于现代农业产业集群培育行动方案（2025—2027年）》（2025-04）；2026年中央一号文件（2026-02-03）；《加快农业农村现代化"十五五"规划》（国发〔2026〕14号，2026-06）；农业农村部发展规划司广东"百千万工程"阶段性总结（2026-04-08）；六部门《关于加强预制菜食品安全监管 促进产业高质量发展的通知》（2024-03-21）；预制菜国标等三份征求意见稿（2026-02-06）</td></tr>
+        <tr><td><b>海关与口岸</b></td><td>海关总署广东分署（2025年农产品进出口3601.3亿元、1—11月出口657.3万吨、RCEP原产地证书）；茂名海关；广州海关（供港澳食品份额口径2018）；南沙海关</td></tr>
+        <tr><td><b>部委与央企平台</b></td><td>农业农村部（龙头企业名单2025-05、清远案例2026-04-16、"AI+粮食安全"部署2025-11-18）；国家发改委（国家骨干冷链物流基地名单2025-06）；国新办广东进出口发布会（2026-01-19）</td></tr>
+        <tr><td><b>权威媒体</b></td><td>人民日报（冷链物流2025-10-14、预制菜国标解读2026-02-09、AI稻田2026-04-08）；新华社《瞭望》（湛江海洋渔业2025-04、海洋强省2026-08、台风麦德姆2025-10-13、预制菜国标六问六答2026-02-06）；央广网（预制菜产业强省2026-01-27、清远千亿集群2026-07-12）；南方日报/南方+/南方都市报（十大万亿级集群2026-02-11、21地市经济数据2026-02-05、菠萝的海2026-05-13、菜篮子改革2025-01-27）；《财经》（31省份消费排名2026-02-13）；农民日报（12221观察2024-12-24、RCEP案例2026-04-01）</td></tr>
+        <tr><td><b>行业机构</b></td><td>中物联冷链委（冷藏车销量分析2026-02-09、2025冷库数据）；艾媒咨询（农产品电商2024、月饼2025、预制菜全国规模）；中国轻工业联合会（《2025中国食品工业高质量发展报告》）；AgeClub（银发食品2025-08）；派读宠物白皮书；高盛研究部；大疆农业×农民日报社《农业无人机行业白皮书（2025/2026）》</td></tr>
+        <tr><td><b>上市公司定期报告</b></td><td>海大集团、温氏股份、海天味业、东鹏饮料、白云山、粤海饲料、广州酒家、中炬高新、国联水产、燕塘乳业、百果园2025年年度报告（巨潮资讯/港交所披露，2026年3—4月，经东方财富、证券时报等多渠道核验）</td></tr>
+      </table>
+    </div>
+    <p class="small">完整信源清单（约120条）详见4份分报告，存于共享目录"广东现代农业与食品供应链专题"。本报告引用遵循"时效优先级：官方最新年度数据＞权威媒体＞咨询机构报告＞自媒体"原则。</p>
+  </div>
+
+  <div class="panel">
+    <h3>B. 数据缺口声明（不编造清单）</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th style="width:34%">缺口项</th><th>现状与处理方式</th></tr>
+        <tr><td>"现代农业与食品"集群2万亿目标完成值</td><td>官方未单独披露（2025年为目标收官年）；以"农业总产值＋食品工业营收"拼接近似口径呈现并注明</td></tr>
+        <tr><td>2025年五业全年拆分</td><td>仅有上半年官方拆分；上半年占比作结构参考并注明推算属性</td></tr>
+        <tr><td>广东食品工业2023—2025年营收</td><td>"2023年冲击万亿目标"完成值无官方确认；沿用2022年8994.7亿元并注明</td></tr>
+        <tr><td>大湾区9市农业产值合计口径</td><td>无官方直接加总；以珠三角板块（2025H1，1495.65亿元）＋各市公报（广州598.04亿元、江门690.70亿元等）近似</td></tr>
+        <tr><td>广东粮食自给率官方现值</td><td>近年未直接发布；采用推算区间24%—26%并注明推算方法</td></tr>
+        <tr><td>广东国家级龙头企业累计总数</td><td>仅检索到"2024年新增14家"，累计无权威现值，不作推断</td></tr>
+        <tr><td>李锦记财务数据</td><td>非上市不披露；仅品牌市占率佐证（蚝油全球销量第一品牌方）</td></tr>
+        <tr><td>大湾区（9市）细分食品消费统计</td><td>无单独统计发布；以组合指标（人口/GDP/餐饮/港澳外溢）呈现</td></tr>
+        <tr><td>广东冷库库容最新值</td><td>最新检索值为2022年约470万吨（前瞻产业研究院），已注明数据较旧</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>C. 编制说明</h3>
+    <ul class="plain">
+      <li><strong>资料基础：</strong>本报告由4份分工搜索报告交叉验证整合而成——搜索员A《任务1产业底盘＋任务5重点企业与产业集群》《任务6市场消费趋势投资机遇与风险挑战》；搜索员C《任务2政策规划与制度供给》《任务3-4食品加工预制菜与冷链物流流通体系》（任务规划：搜索规划师）。</li>
+      <li><strong>质量约束：</strong>产业规模类数据至少两个独立信源互证；每条关键数据标注"数值＋统计年份＋口径＋来源机构"四要素；政策核对文件全称与发布时间并区分层级；已废止或被替代政策予以说明；冲突数据按第七章规则裁决或并列。</li>
+      <li><strong>时点声明：</strong>数据检索截止2026年8月28日；"截至2026年8月，预制菜国家标准仍处于征求意见稿状态"为重要时效性注记。</li>
+      <li><strong>使用提示：</strong>本报告为信息整合与研究参考，不构成投资建议；涉及"十五五"前瞻内容为基于公开政策的研判，已标注研判属性。</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-title">广东省（大湾区）现代农业和食品供应链深度洞察报告</div>
+    <div class="foot-meta">编制：报告汇总员 ｜ 素材与检索：并行搜索员A · 并行搜索员C ｜ 任务规划：搜索规划师 ｜ 派发：群管理员<br>2026年8月28日 ｜ 数据检索截止 2026-08-28 ｜ 仅供研究参考，不构成投资建议</div>
+    <div class="foot-field"></div>
+    <div class="foot-note">从田间到餐桌 · 从湾区到全球</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
